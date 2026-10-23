@@ -148,19 +148,19 @@ def do_search(q, count):
     q = " ".join(str(q).split())[:120]
     count = max(1, min(40, int(count)))
 
-    def work():
-with yt_dlp.YoutubeDL(ydl_options(flat=True)) as ydl:
+        def work():
+        opts = ydl_options(flat=True)
 
-opts = ydl_options(flat=True)
-opts.update({
-    "js_runtimes": {"node": {}},
-    "remote_components": {"ejs:github"},
-})
-with yt_dlp.YoutubeDL(opts) as ydl:
-     return [x for entry in result.get("entries", []) if (x := normalize(entry))]
+        with yt_dlp.YoutubeDL(opts) as ydl:
+            result = ydl.extract_info(
+                f"ytsearch{count}:{q}",
+                download=False
+            ) or {}
 
-    return SEARCH_CACHE.call((q.casefold(), count), work)
-
+        return [
+            x for entry in result.get("entries", [])
+            if (x := normalize(entry))
+        ]
 
 async def search_tracks(q, count=18):
     return await run_worker(do_search, q, count)
