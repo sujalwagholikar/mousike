@@ -66,6 +66,7 @@ UUID_RE = re.compile(r"^[a-f0-9-]{36}$")
 def ydl_options(flat=False):
     return {
         "js_runtimes": js_runtime_config(),
+        "remote_components": {"ejs:github"},
         "quiet": True,
         "no_warnings": True,
         "skip_download": True,
@@ -147,9 +148,15 @@ def do_search(q, count):
     count = max(1, min(40, int(count)))
 
     def work():
-        with yt_dlp.YoutubeDL(ydl_options(flat=True)) as ydl:
-            result = ydl.extract_info(f"ytsearch{count}:{q}", download=False) or {}
-        return [x for entry in result.get("entries", []) if (x := normalize(entry))]
+with yt_dlp.YoutubeDL(ydl_options(flat=True)) as ydl:
+
+opts = ydl_options(flat=True)
+opts.update({
+    "js_runtimes": {"node": {}},
+    "remote_components": {"ejs:github"},
+})
+with yt_dlp.YoutubeDL(opts) as ydl:
+     return [x for entry in result.get("entries", []) if (x := normalize(entry))]
 
     return SEARCH_CACHE.call((q.casefold(), count), work)
 
