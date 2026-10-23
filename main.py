@@ -1370,6 +1370,7 @@ async def wikipedia_rest_portraits(names):
 
 
 PORTRAIT_DIR = ROOT / "assets" / "cache" / "portraits"
+PORTRAIT_DIR = Path(tempfile.gettempdir()) / "mousike" / "cache" / "portraits"
 PORTRAIT_DIR.mkdir(parents=True, exist_ok=True)
 PORTRAIT_LOCKS = {}
 PORTRAIT_TTL = 60 * 60 * 24 * 21
