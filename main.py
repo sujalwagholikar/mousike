@@ -67,6 +67,7 @@ def ydl_options(flat=False):
     return {
         "js_runtimes": js_runtime_config(),
         "remote_components": {"ejs:github"},
+        "source_address": "0.0.0.0",
         "quiet": True,
         "no_warnings": True,
         "skip_download": True,
