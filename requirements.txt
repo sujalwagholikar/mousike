@@ -6,3 +6,6 @@ python-dotenv==1.2.4
 # Vercel packages Node (for yt-dlp EJS) and FFmpeg (for chapter exports).
 nodejs-wheel==24.19.0
 imageio-ffmpeg==0.6.0
+
+# Auto provider recognized by yt-dlp (actual JS build happens at Vercel build time)
+bgutil-ytdlp-pot-provider==2.0.2

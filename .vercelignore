@@ -1,6 +1,5 @@
 # Local and browser tests should not ship inside the function.
 tests/
-node_modules/
 .venv/
 __pycache__/
 .pytest_cache/
@@ -11,6 +10,6 @@ test-results/
 .env
 .env.*
 !.env.example
-scripts/
 *.bat
 TEST_REPORT.md
+# Keep POT provider build assets in the function deployment.

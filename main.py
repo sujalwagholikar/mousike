@@ -21,6 +21,7 @@ from contextlib import asynccontextmanager
 from infrastructure import BoundedCache, SEARCH_CACHE, run_worker, singleflight
 from security import SecurityMiddleware
 from runtime_support import js_runtime_config, ffmpeg_executable, js_runtime_available
+from pot_support import pot_options, pot_status
 from discovery import interpret_query, ranked_search, suggestions
 from embeddings import ENCODER
 from lyrics import local_lyrics
@@ -65,6 +66,7 @@ UUID_RE = re.compile(r"^[a-f0-9-]{36}$")
 
 def ydl_options(flat=False):
     return {
+        **pot_options(),
         "js_runtimes": js_runtime_config(),
         "remote_components": {"ejs:github"},
         "source_address": "0.0.0.0",
@@ -79,6 +81,11 @@ def ydl_options(flat=False):
         "cachedir": False,
         "ignoreerrors": True,
     }
+
+
+@app.get("/api/pot-status")
+async def pot_health():
+    return pot_status()
 
 
 def normalize(item):
