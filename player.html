@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <script defer="True" src="/assets/js/data.js">
+  </script>
+  <script defer="True" src="/assets/js/artists.js">
+  </script>
+  <link href="/assets/fonts/fonts.css?v=6" rel="stylesheet"/>
+  <link href="/assets/css/system.css?v=6" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#0b100d" name="theme-color"/>
+  <title>
+   Now Playing · Mousike — Sound In motion
+  </title>
+  <link href="/assets/brand/mousike-mark-static.svg?v=6" rel="icon" type="image/svg+xml"/>
+  <link href="/assets/css/player.css" rel="stylesheet"/>
+  <link href="/assets/css/glass-pages.css?v=1" rel="stylesheet"/>
+  <script defer="True" src="/assets/js/player.js?v=6">
+  </script>
+ </head>
+ <body>
+  <svg aria-hidden="true" class="svg-sprite" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+   <symbol id="i-home" viewbox="0 0 24 24">
+    <path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1Z">
+    </path>
+   </symbol>
+   <symbol id="i-search" viewbox="0 0 24 24">
+    <circle cx="10.8" cy="10.8" r="7">
+    </circle>
+    <path d="m16 16 5 5">
+    </path>
+   </symbol>
+   <symbol id="i-library" viewbox="0 0 24 24">
+    <path d="M4 4v16M9 4v16M14 6v14m4-12 3 12">
+    </path>
+   </symbol>
+   <symbol id="i-heart" viewbox="0 0 24 24">
+    <path d="M20.8 4.8a5.5 5.5 0 0 0-7.8 0l-1 1-1-1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.4a5.5 5.5 0 0 0 0-7.8Z">
+    </path>
+   </symbol>
+   <symbol id="i-clock" viewbox="0 0 24 24">
+    <circle cx="12" cy="12" r="9">
+    </circle>
+    <path d="M12 7v5l4 2">
+    </path>
+   </symbol>
+   <symbol id="i-list" viewbox="0 0 24 24">
+    <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01">
+    </path>
+   </symbol>
+   <symbol id="i-settings" viewbox="0 0 24 24">
+    <circle cx="12" cy="12" r="3">
+    </circle>
+    <path d="m19 13 2 1-2 4-2-1-2 1v2H9v-2l-2-1-2 1-2-4 2-1v-2l-2-1 2-4 2 1 2-1V4h6v2l2 1 2-1 2 4-2 1Z">
+    </path>
+   </symbol>
+   <symbol id="i-plus" viewbox="0 0 24 24">
+    <path d="M12 4v16M4 12h16">
+    </path>
+   </symbol>
+   <symbol id="i-chevron" viewbox="0 0 24 24">
+    <path d="m15 18-6-6 6-6">
+    </path>
+   </symbol>
+   <symbol id="i-volume" viewbox="0 0 24 24">
+    <path d="M11 5 6 9H3v6h3l5 4V5Zm4 4a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12">
+    </path>
+   </symbol>
+   <symbol id="i-panel" viewbox="0 0 24 24">
+    <rect height="16" rx="2" width="18" x="3" y="4">
+    </rect>
+    <path d="M15 4v16">
+    </path>
+   </symbol>
+   <symbol id="i-spark" viewbox="0 0 24 24">
+    <path d="m12 2 2.7 7.3L22 12l-7.3 2.7L12 22l-2.7-7.3L2 12l7.3-2.7L12 2Z">
+    </path>
+   </symbol>
+   <symbol id="i-disc" viewbox="0 0 24 24">
+    <circle cx="12" cy="12" r="9">
+    </circle>
+    <circle cx="12" cy="12" r="2">
+    </circle>
+   </symbol>
+   <symbol id="i-music" viewbox="0 0 24 24">
+    <path d="M9 18V5l11-2v13M9 18c0 3-6 4-6 1s6-4 6-1Zm11-2c0 3-6 4-6 1s6-4 6-1Z">
+    </path>
+   </symbol>
+   <symbol id="i-play" viewbox="0 0 24 24">
+    <path d="m7 4 14 8-14 8V4Z">
+    </path>
+   </symbol>
+   <symbol id="i-arrow" viewbox="0 0 24 24">
+    <path d="M5 12h14m-6-6 6 6-6 6">
+    </path>
+   </symbol>
+   <symbol id="i-close" viewbox="0 0 24 24">
+    <path d="M5 5l14 14M19 5 5 19">
+    </path>
+   </symbol>
+   <symbol id="i-more" viewbox="0 0 24 24">
+    <circle cx="5" cy="12" r="1">
+    </circle>
+    <circle cx="12" cy="12" r="1">
+    </circle>
+    <circle cx="19" cy="12" r="1">
+    </circle>
+   </symbol>
+   <symbol id="i-user" viewbox="0 0 24 24">
+    <circle cx="12" cy="8" r="4">
+    </circle>
+    <path d="M4 21c0-8 16-8 16 0">
+    </path>
+   </symbol>
+   <symbol id="i-pause" viewbox="0 0 24 24">
+    <path d="M7 5h3v14H7zm7 0h3v14h-3z">
+    </path>
+   </symbol>
+   <symbol id="i-prev" viewbox="0 0 24 24">
+    <path d="M5 5v14M19 5 8 12l11 7V5Z">
+    </path>
+   </symbol>
+   <symbol id="i-next" viewbox="0 0 24 24">
+    <path d="M19 5v14M5 5l11 7-11 7V5Z">
+    </path>
+   </symbol>
+   <symbol id="i-shuffle" viewbox="0 0 24 24">
+    <path d="M3 7h3c4 0 8 10 12 10h3M3 17h3c1 0 2-1 3-2M14 9c2-2 3-2 4-2h3m-4-4 4 4-4 4m0 2 4 4-4 4">
+    </path>
+   </symbol>
+   <symbol id="i-repeat" viewbox="0 0 24 24">
+    <path d="m17 2 4 4-4 4M3 10V8a2 2 0 0 1 2-2h16M7 22l-4-4 4-4m14 0v2a2 2 0 0 1-2 2H3">
+    </path>
+   </symbol>
+   <symbol id="i-refresh" viewbox="0 0 24 24">
+    <path d="M20 7v5h-5M4 17v-5h5M5.1 8a7 7 0 0 1 11.5-3L20 8M4 16l3.4 3A7 7 0 0 0 19 16">
+    </path>
+   </symbol>
+   <symbol id="i-minus" viewbox="0 0 24 24">
+    <path d="M5 12h14">
+    </path>
+   </symbol>
+   <symbol id="i-expand" viewbox="0 0 24 24">
+    <path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5">
+    </path>
+   </symbol>
+   <symbol id="i-check" viewbox="0 0 24 24">
+    <path d="m5 12 4 4L19 6">
+    </path>
+   </symbol>
+   <symbol id="i-lyrics" viewbox="0 0 24 24">
+    <path d="M4 5h16M4 10h16M4 15h10M4 20h7">
+    </path>
+   </symbol>
+   <symbol id="i-download" viewbox="0 0 24 24">
+    <path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4">
+    </path>
+   </symbol>
+  </svg>
+  <div class="player-scene">
+   <div class="art-ambient" id="ambient">
+   </div>
+   <div class="scene-wash">
+   </div>
+   <header class="player-top">
+    <a aria-label="Mousike home" class="player-brand" href="/" id="brandLink">
+     <img alt="" src="/assets/brand/mousike-mark-static.svg?v=6"/>
+     <span>
+      <strong>
+       Mousike
+      </strong>
+      <small>
+       Sound In motion
+      </small>
+     </span>
+    </a>
+    <div class="player-top-center">
+     <span class="dot">
+     </span>
+     YOUR LISTENING SPACE
+     <span id="listeningStatus">
+      READY TO PLAY
+     </span>
+    </div>
+    <div class="player-head-actions">
+     <button aria-label="Refresh mix" class="head-action" id="refresh" title="Refresh Smart Radio">
+      <svg aria-hidden="true" class="ui-icon">
+       <use href="#i-refresh">
+       </use>
+      </svg>
+     </button>
+     <button aria-label="Settings" class="head-action" id="settings" title="Settings">
+      <svg aria-hidden="true" class="ui-icon">
+       <use href="#i-settings">
+       </use>
+      </svg>
+     </button>
+     <button aria-label="Close player" class="head-close" id="close" title="Return to library">
+      <svg aria-hidden="true" class="ui-icon">
+       <use href="#i-close">
+       </use>
+      </svg>
+     </button>
+    </div>
+   </header>
+   <main class="player-main">
+    <section aria-label="Current music" class="player-feature">
+     <div class="feature-eyebrow">
+      <span>
+       NOW PLAYING
+      </span>
+      <span id="strategy">
+       SEMANTIC RADIO
+      </span>
+     </div>
+     <div class="feature-art-wrap">
+      <img alt="Current song artwork" class="feature-art" id="art" src="/assets/images/placeholder.svg"/>
+      <span class="art-badge" id="artBadge">
+       MOUSIKE
+      </span>
+     </div>
+     <div class="feature-titles">
+      <div class="title-block">
+       <span class="micro-label">
+        YOUR SOUNDTRACK
+       </span>
+       <h1 id="song">
+        Your music starts here
+       </h1>
+       <p id="artist">
+        Choose a song in Mousike to begin
+       </p>
+      </div>
+      <div class="feature-actions">
+       <button aria-label="Like current song" id="like" title="Save to liked songs">
+        <svg aria-hidden="true" class="ui-icon">
+         <use href="#i-heart">
+         </use>
+        </svg>
+       </button>
+       <button aria-label="Download current song" id="download" title="Download current song">
+        <svg viewbox="0 0 24 24">
+         <path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4">
+         </path>
+        </svg>
+       </button>
+       <button aria-label="Copy song link" id="copy" title="Copy song link">
+        <svg viewbox="0 0 24 24">
+         <rect height="12" rx="2" width="12" x="8" y="8">
+         </rect>
+         <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3">
+         </path>
+        </svg>
+       </button>
+      </div>
+     </div>
+     <div class="controls-area">
+      <div class="transport">
+       <button aria-label="Shuffle" id="shuffle" title="Shuffle">
+        <svg aria-hidden="true" class="ui-icon">
+         <use href="#i-shuffle">
+         </use>
+        </svg>
+       </button>
+       <button aria-label="Previous track" id="prev" title="Previous">
+        <svg viewbox="0 0 24 24">
+         <path d="M6 4v16M18 5l-10 7 10 7V5Z" fill="currentColor" stroke="none">
+         </path>
+        </svg>
+       </button>
+       <button aria-label="Play" class="play-main" id="play">
+        <svg id="playIcon" viewbox="0 0 24 24">
+         <path d="m8 5 12 7-12 7Z" fill="currentColor" stroke="none">
+         </path>
+        </svg>
+       </button>
+       <button aria-label="Next track" id="next" title="Next">
+        <svg viewbox="0 0 24 24">
+         <path d="M18 4v16M6 5l10 7-10 7V5Z" fill="currentColor" stroke="none">
+         </path>
+        </svg>
+       </button>
+       <button aria-label="Repeat mode" id="repeat" title="Repeat">
+        <svg aria-hidden="true" class="ui-icon">
+         <use href="#i-repeat">
+         </use>
+        </svg>
+       </button>
+      </div>
+      <div class="seek-line">
+       <span id="elapsed">
+        0:00
+       </span>
+       <input aria-label="Track position" id="seek" max="1000" min="0" type="range" value="0"/>
+       <span id="duration">
+        0:00
+       </span>
+      </div>
+      <div class="player-secondary">
+       <span>
+        <img alt="Mousike" class="moving-logo" id="movingLogo" src="/assets/brand/mousike-mark-static.svg?v=6"/>
+        <span id="playingLabel">
+         A world of sound
+        </span>
+       </span>
+       <div class="volume-group">
+        <svg viewbox="0 0 24 24">
+         <path d="M11 5 6 9H2v6h4l5 4V5ZM15 9a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12">
+         </path>
+        </svg>
+        <input aria-label="Volume" id="volume" max="100" min="0" type="range" value="75"/>
+       </div>
+      </div>
+      <canvas aria-label="Live audio spectrum" height="28" id="spectrum" width="560">
+      </canvas>
+     </div>
+    </section>
+    <aside aria-label="Queue and listening information" class="player-sidebar">
+     <div aria-label="Listening panels" class="player-tabs" role="tablist">
+      <button aria-controls="queuePanel" aria-selected="true" id="queueTab" role="tab">
+       Queue
+      </button>
+      <button aria-controls="lyricsPanel" aria-selected="false" id="lyricsTab" role="tab">
+       Lyrics
+      </button>
+     </div>
+     <section aria-labelledby="queueTab" id="queuePanel" role="tabpanel">
+      <div class="queue-head">
+       <div>
+        <span class="micro-label">
+         KEEP THE MUSIC MOVING
+        </span>
+        <h2>
+         Up next
+        </h2>
+        <p id="queueDescription">
+         Your next songs, in the order you choose.
+        </p>
+       </div>
+       <span class="count" id="queueCount">
+        0
+       </span>
+      </div>
+      <div class="queue-list" id="queue">
+       <div class="empty-queue">
+        Your next songs will appear here.
+       </div>
+      </div>
+     </section>
+     <section aria-labelledby="lyricsTab" hidden="" id="lyricsPanel" role="tabpanel">
+      <div class="lyrics-header">
+       <span class="micro-label">
+        FOLLOW THE WORDS
+       </span>
+       <h2>
+        Lyrics
+       </h2>
+       <p id="lyricsSource">
+        Import lyrics you have permission to use.
+       </p>
+      </div>
+      <div class="lyrics-lines" id="lyricsLines">
+       <p class="lyrics-empty">
+        No lyrics supplied for this recording.
+       </p>
+      </div>
+      <label class="outline-button import-lyrics">
+       Import .lrc
+       <input accept=".lrc,.txt,text/plain" hidden="" id="lyricsFile" type="file"/>
+      </label>
+     </section>
+     <div class="sidebar-discovery">
+      <div class="micro-label">
+       DISCOVERY ENGINE
+      </div>
+      <div class="radio-line">
+       <span class="radio-led">
+       </span>
+       <div>
+        <strong>
+         Smart Radio
+        </strong>
+        <p id="radioMode">
+         No Gemini key required
+        </p>
+       </div>
+      </div>
+      <p>
+       Different artists. No repeated uploads of the same song. Your taste evolves with every listen.
+      </p>
+      <button class="outline-button" id="smartNext">
+       Continue with Radio
+      </button>
+     </div>
+     <div class="sidebar-detail">
+      <span class="micro-label">
+       ABOUT THIS PLAYBACK
+      </span>
+      <div>
+       <span>
+        Source
+       </span>
+       <strong>
+        YouTube audio
+       </strong>
+      </div>
+      <div>
+       <span>
+        Original
+       </span>
+       <a href="https://www.youtube.com/" id="sourceLink" rel="noopener noreferrer" target="_blank">
+        Open original
+       </a>
+      </div>
+      <div>
+       <span>
+        Audio
+       </span>
+       <strong>
+        Served by Mousike
+       </strong>
+      </div>
+     </div>
+    </aside>
+   </main>
+   <div aria-live="polite" class="toast" id="toast" role="status">
+   </div>
+  </div>
+  <script defer="" src="/assets/js/player.js?v=6">
+  </script>
+ </body>
+</html>

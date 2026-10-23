@@ -1,0 +1,8 @@
+# Vercel recognizes the existing FastAPI app; no JS frontend build is required.
+[tool.vercel]
+entrypoint = "main:app"
+
+# Assets are public. SecurityMiddleware protects the API/HTML, not public assets.
+[tool.vercel.fastapi.static]
+cdn = true
+exclude = false

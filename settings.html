@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <script defer="True" src="/assets/js/data.js">
+  </script>
+  <script defer="True" src="/assets/js/artists.js">
+  </script>
+  <link href="/assets/fonts/fonts.css?v=6" rel="stylesheet"/>
+  <link href="/assets/css/system.css?v=6" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <meta content="#0b100f" name="theme-color"/>
+  <title>
+   Settings · Mousike — Sound In motion
+  </title>
+  <link href="/assets/brand/mousike-mark-static.svg?v=6" rel="icon" type="image/svg+xml"/>
+  <link href="/assets/css/settings.css" rel="stylesheet"/>
+  <link href="/assets/css/glass-pages.css?v=1" rel="stylesheet"/>
+ </head>
+ <body class="settings-page">
+  <svg aria-hidden="true" height="0" style="position:absolute;overflow:hidden" width="0">
+   <defs>
+    <symbol id="ic-close" viewbox="0 0 24 24">
+     <path d="M5 5l14 14M19 5 5 19">
+     </path>
+    </symbol>
+    <symbol id="ic-palette" viewbox="0 0 24 24">
+     <path d="M12 3a9 9 0 1 0 0 18h2a2 2 0 0 0 1.5-3.3A2.2 2.2 0 0 1 17 14h1a3 3 0 0 0 3-3A9 9 0 0 0 12 3Z">
+     </path>
+     <circle cx="7.5" cy="12" r="1">
+     </circle>
+     <circle cx="9" cy="7.5" r="1">
+     </circle>
+     <circle cx="15" cy="7.5" r="1">
+     </circle>
+    </symbol>
+    <symbol id="ic-sliders" viewbox="0 0 24 24">
+     <path d="M4 6h16M4 12h16M4 18h16M9 3v6M16 9v6M8 15v6">
+     </path>
+    </symbol>
+    <symbol id="ic-headphones" viewbox="0 0 24 24">
+     <path d="M4 14v-3a8 8 0 0 1 16 0v3">
+     </path>
+     <rect height="8" rx="2" width="4" x="2" y="13">
+     </rect>
+     <rect height="8" rx="2" width="4" x="18" y="13">
+     </rect>
+    </symbol>
+    <symbol id="ic-spark" viewbox="0 0 24 24">
+     <path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z">
+     </path>
+    </symbol>
+    <symbol id="ic-user" viewbox="0 0 24 24">
+     <circle cx="12" cy="8" r="4">
+     </circle>
+     <path d="M4 21c0-5 3-8 8-8s8 3 8 8">
+     </path>
+    </symbol>
+    <symbol id="ic-shield" viewbox="0 0 24 24">
+     <path d="M12 2 3 6v6c0 5.5 3.5 8.5 9 10 5.5-1.5 9-4.5 9-10V6l-9-4Z">
+     </path>
+     <path d="m8.5 12 2.3 2.5 5-5">
+     </path>
+    </symbol>
+    <symbol id="ic-keyboard" viewbox="0 0 24 24">
+     <rect height="14" rx="2" width="20" x="2" y="5">
+     </rect>
+     <path d="M6 10h1m3 0h1m3 0h1m3 0h1M5 14h14m-12 2h10">
+     </path>
+    </symbol>
+    <symbol id="ic-info" viewbox="0 0 24 24">
+     <circle cx="12" cy="12" r="10">
+     </circle>
+     <path d="M12 11v6m0-10v1">
+     </path>
+    </symbol>
+    <symbol id="ic-check" viewbox="0 0 24 24">
+     <path d="m5 12 5 5L20 7">
+     </path>
+    </symbol>
+    <symbol id="ic-arrow" viewbox="0 0 24 24">
+     <path d="m14 5-7 7 7 7">
+     </path>
+    </symbol>
+   </defs>
+  </svg>
+  <div class="settings-app">
+   <aside class="settings-sidebar">
+    <div class="side-brand">
+     <img alt="Mousike logo" src="/assets/brand/mousike-mark-static.svg?v=6"/>
+     <div>
+      <strong>
+       Mousike
+      </strong>
+      <small>
+       Sound In motion
+      </small>
+     </div>
+    </div>
+    <span class="side-label">
+     YOUR EXPERIENCE
+    </span>
+    <nav aria-label="Settings sections" class="settings-nav">
+     <button class="selected" data-section="appearance">
+      <svg>
+       <use href="#ic-palette">
+       </use>
+      </svg>
+      <span>
+       Appearance
+      </span>
+     </button>
+     <button data-section="playback">
+      <svg>
+       <use href="#ic-headphones">
+       </use>
+      </svg>
+      <span>
+       Playback
+      </span>
+     </button>
+     <button data-section="audio">
+      <svg>
+       <use href="#ic-sliders">
+       </use>
+      </svg>
+      <span>
+       Audio studio
+      </span>
+     </button>
+     <button data-section="intelligence">
+      <svg>
+       <use href="#ic-spark">
+       </use>
+      </svg>
+      <span>
+       Mousike Intelligence
+      </span>
+     </button>
+     <button data-section="personal">
+      <svg>
+       <use href="#ic-user">
+       </use>
+      </svg>
+      <span>
+       Personalization
+      </span>
+     </button>
+     <button data-section="privacy">
+      <svg>
+       <use href="#ic-shield">
+       </use>
+      </svg>
+      <span>
+       Privacy &amp; data
+      </span>
+     </button>
+     <button data-section="shortcuts">
+      <svg>
+       <use href="#ic-keyboard">
+       </use>
+      </svg>
+      <span>
+       Shortcuts
+      </span>
+     </button>
+     <button data-section="about">
+      <svg>
+       <use href="#ic-info">
+       </use>
+      </svg>
+      <span>
+       About
+      </span>
+     </button>
+    </nav>
+    <div class="sidebar-footer">
+     <p>
+      Craft your listening space.
+     </p>
+     <small>
+      Saved locally in this browser.
+     </small>
+    </div>
+   </aside>
+   <main class="settings-main">
+    <header class="settings-top">
+     <div>
+      <span class="breadcrumb">
+       MOUSIKE / PREFERENCES
+      </span>
+      <h1 id="pageTitle">
+       Appearance
+      </h1>
+      <p id="pageSubtitle">
+       Make every detail feel like yours.
+      </p>
+     </div>
+     <button aria-label="Back to player" class="close-settings" id="closeSettings" title="Back to player">
+      <svg>
+       <use href="#ic-close">
+       </use>
+      </svg>
+     </button>
+    </header>
+    <div class="settings-body" id="settingsBody">
+     <section class="settings-section active" id="section-appearance">
+      <div class="settings-card highlight-card">
+       <div class="card-head">
+        <div>
+         <span class="eyebrow">
+          LIVE PREVIEW
+         </span>
+         <h2>
+          Your visual frequency
+         </h2>
+         <p>
+          Every accent, panel, and motion tuned to you.
+         </p>
+        </div>
+        <div class="mini-cover">
+         <img alt="Mousike mark" src="/assets/brand/mousike-mark-static.svg?v=6"/>
+        </div>
+       </div>
+       <div class="preview-lines">
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+        <span>
+        </span>
+       </div>
+       <div class="preview-player">
+        <span class="preview-dot">
+        </span>
+        <div>
+         <strong>
+          Mousike Radio
+         </strong>
+         <small>
+          Sound In motion
+         </small>
+        </div>
+        <span class="preview-play">
+         ▶
+        </span>
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Theme
+       </h2>
+       <p>
+        Choose how your music workspace feels.
+       </p>
+       <div class="theme-groups" aria-label="Theme collections"><button type="button" data-theme-group="single" class="selected" aria-pressed="true">Single tone</button><button type="button" data-theme-group="dual" aria-pressed="false">Dual tone</button></div><div class="theme-grid" id="themes">
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Accent palette
+       </h2>
+       <p>
+        Change the entire interface's highlight color.
+       </p>
+       <div class="palette-grid" id="palettes">
+       </div>
+       <label class="custom-color">
+        Custom accent
+        <input id="customAccent" type="color" value="#b8f487"/>
+       </label>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Layout &amp; motion
+       </h2>
+       <div class="field-row">
+        <label for="density">
+         Card spacing
+         <small>
+          Density of albums and lists
+         </small>
+        </label>
+        <select id="density">
+         <option value="balanced">
+          Balanced
+         </option>
+         <option value="compact">
+          Compact
+         </option>
+         <option value="spacious">
+          Spacious
+         </option>
+        </select>
+       </div>
+       <div class="field-row">
+        <label for="rounding">
+         Corner styling
+        </label>
+        <select id="rounding">
+         <option value="rounded">
+          Soft and rounded
+         </option>
+         <option value="soft">
+          Precision corners
+         </option>
+        </select>
+       </div>
+       <div class="field-row">
+        <label for="fontScale">
+         Text size
+        </label>
+        <select id="fontScale">
+         <option value="normal">
+          Standard
+         </option>
+         <option value="large">
+          Comfortable
+         </option>
+         <option value="larger">
+          Extra readable
+         </option>
+        </select>
+       </div>
+       <div class="field-row">
+        <label for="motion">
+         Reduce animations
+         <small>
+          Limit transitions for accessibility
+         </small>
+        </label>
+        <input id="motion" type="checkbox"/>
+       </div>
+      </div>
+     </section>
+     <section class="settings-section" id="section-playback">
+      <div class="settings-card">
+       <span class="eyebrow">
+        LISTENING
+       </span>
+       <h2>
+        Playback behavior
+       </h2>
+       <p>
+        Your preferences apply to the player immediately when Settings is open in Mousike.
+       </p>
+       <div class="field-row">
+        <label for="speed">
+         Playback speed
+        </label>
+        <select id="speed">
+         <option value="0.75">
+          0.75×
+         </option>
+         <option value="1">
+          Normal · 1×
+         </option>
+         <option value="1.25">
+          1.25×
+         </option>
+         <option value="1.5">
+          1.5×
+         </option>
+         <option value="2">
+          2×
+         </option>
+        </select>
+       </div>
+       <div class="field-row">
+        <label for="autoplay">
+         Autoplay the next track
+        </label>
+        <input id="autoplay" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="volume">
+         Default player volume
+        </label>
+        <div class="range-label">
+         <input id="volume" max="100" min="0" type="range"/>
+         <output id="volumeValue">
+          75%
+         </output>
+        </div>
+       </div>
+       <div class="field-row">
+        <label for="albumMode">
+         Long-video album engine
+         <small>
+          Choose how long recordings become tracks
+         </small>
+        </label>
+        <select id="albumMode">
+         <option value="auto">
+          Auto · chapters then metadata
+         </option>
+         <option value="split">
+          Split by published timestamps
+         </option>
+         <option value="metadata">
+          Find individual recordings
+         </option>
+        </select>
+       </div>
+       <div class="field-row">
+        <label for="crossfade">
+         Crossfade
+         <small>
+          Blend supported separate recordings. Chapter transitions stay continuous.
+         </small>
+        </label>
+        <select id="crossfade">
+         <option value="0">
+          Off
+         </option>
+         <option value="2">
+          2 seconds
+         </option>
+         <option value="4">
+          4 seconds
+         </option>
+         <option value="6">
+          6 seconds
+         </option>
+         <option value="8">
+          8 seconds
+         </option>
+         <option value="12">
+          12 seconds
+         </option>
+        </select>
+       </div>
+       <div class="field-row">
+        <label for="prebuffer">
+         Prebuffer the next song
+         <small>
+          Uses extra bandwidth. Source metadata is warmed automatically.
+         </small>
+        </label>
+        <input id="prebuffer" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="normalization">
+         Volume normalization
+         <small>
+          Level stream volume gradually, or use ReplayGain when supplied.
+         </small>
+        </label>
+        <input id="normalization" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="sleep">
+         Sleep timer
+        </label>
+        <select id="sleep">
+         <option value="0">
+          Off
+         </option>
+         <option value="15">
+          15 minutes
+         </option>
+         <option value="30">
+          30 minutes
+         </option>
+         <option value="60">
+          1 hour
+         </option>
+         <option value="120">
+          2 hours
+         </option>
+        </select>
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        What your player can do
+       </h2>
+       <p>
+        Song queues, repeat modes, shuffle, skip/seek controls, timestamp-based album chapters, and browser-based audio processing. Streams depend on their original source quality.
+       </p>
+      </div>
+     </section>
+     <section class="settings-section" id="section-audio">
+      <div class="settings-card">
+       <span class="eyebrow">
+        MOUSIKE AUDIO STUDIO
+       </span>
+       <div class="card-head">
+        <div>
+         <h2>
+          Shape your sound
+         </h2>
+         <p>
+          Real-time equalization processed locally in the browser player.
+         </p>
+        </div>
+        <label class="toggle-stack">
+         <input id="studioEnabled" type="checkbox"/>
+         <span>
+          Effects on
+         </span>
+        </label>
+       </div>
+       <div class="field-row">
+        <label for="studioPreset">
+         Sound signature
+        </label>
+        <select id="studioPreset">
+        </select>
+       </div>
+       <div class="eq-grid" id="eqBands">
+       </div>
+       <div class="actions-row">
+        <button class="soft-button" id="eqFlat" type="button">
+         Reset equalizer
+        </button>
+        <button class="soft-button" id="eqReset" type="button">
+         Reset entire sound profile
+        </button>
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Fine tuning
+       </h2>
+       <div id="soundRanges">
+       </div>
+       <div class="field-row">
+        <label for="compress">
+         Dynamic compression
+         <small>
+          Tame loud peaks (not lossless or Dolby)
+         </small>
+        </label>
+        <input id="compress" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="visualizer">
+         Spectrum animation
+        </label>
+        <input id="visualizer" type="checkbox"/>
+       </div>
+      </div>
+      <div class="disclaimer">
+       Room ambience, cinematic equalization and vocal clarity are software audio effects. They do not provide Dolby Atmos decoding or isolated vocal stems.
+      </div>
+     </section>
+     <section class="settings-section" id="section-intelligence">
+      <div class="settings-card highlight-card">
+       <span class="eyebrow">
+        MOUSIKE INTELLIGENCE
+       </span>
+       <div class="card-head">
+        <div>
+         <h2>
+          Music that learns your taste
+         </h2>
+         <p>
+          Optional Gemini analysis and adaptive song suggestions.
+         </p>
+        </div>
+        <div class="ai-orbit">
+         <img alt="" src="/assets/brand/mousike-mark-static.svg?v=6"/>
+        </div>
+       </div>
+       <div class="ai-status" id="aiStatus">
+        Checking settings…
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Gemini 3.5 Flash-Lite connection
+       </h2>
+       <p>
+        The API key is optional. Without it, a local Python ranker continues to recommend songs.
+       </p>
+       <div class="key-input">
+        <input autocomplete="off" id="geminiKey" placeholder="Paste your Gemini API key" spellcheck="false" type="password"/>
+        <button id="keySave" type="button">
+         Save key
+        </button>
+       </div>
+       <div class="actions-row">
+        <button class="soft-button" id="keyTest" type="button">
+         Test connection
+        </button>
+        <button class="soft-button danger" id="keyRemove" type="button">
+         Remove key
+        </button>
+        <a href="https://aistudio.google.com/apikey" rel="noopener noreferrer" target="_blank">
+         Get a key
+        </a>
+       </div>
+       <small class="warning">
+        The key is sent only to your Mousike server for Gemini requests. Optional Gemini uses a compact music-taste summary. A key kept on this device can be read by scripts or extensions with access to this origin.
+       </small>
+       <div class="field-row">
+        <label for="rememberKey">
+         Remember key on this device
+         <small>
+          Off: the key lasts only for this browser session. A server environment key is supported.
+         </small>
+        </label>
+        <input id="rememberKey" type="checkbox"/>
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Adaptive recommendations
+       </h2>
+       <div class="field-row">
+        <label for="radio">
+         Endless Smart Radio
+         <small>
+          Continue when your playlist ends
+         </small>
+        </label>
+        <input id="radio" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="overrideQueue">
+         Adaptive next track
+         <small>
+          Allow Radio picks to interrupt the existing queue
+         </small>
+        </label>
+        <input id="overrideQueue" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="activity">
+         Learn from listening activity
+         <small>
+          Favorites, skips and completed songs
+         </small>
+        </label>
+        <input id="activity" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="autoFeed">
+         Auto-refresh personal recommendations
+        </label>
+        <input id="autoFeed" type="checkbox"/>
+       </div>
+       <div class="field-row">
+        <label for="feedInterval">
+         Refresh frequency
+         <small>
+          Local semantic recommendations work without Gemini. Automatically refresh while Mousike is open.
+         </small>
+        </label>
+        <select id="feedInterval">
+         <option value="10">
+          Every 10 minutes
+         </option>
+         <option value="30">
+          Every 30 minutes
+         </option>
+         <option value="60">
+          Every 1 hour
+         </option>
+         <option value="360">
+          Every 6 hours
+         </option>
+         <option value="1440">
+          Every 1 day
+         </option>
+        </select>
+       </div>
+       <p class="setting-note">
+        No key: semantic genre/mood matching, artist balancing and song-identity deduplication. With Gemini: AI-assisted curation under the same no-repeat safeguards.
+       </p>
+       <div class="actions-row">
+        <button class="soft-button" id="analyze" type="button">
+         Analyze my taste
+        </button>
+        <button class="soft-button" id="refreshFeed" type="button">
+         Rebuild recommendations
+        </button>
+       </div>
+       <div class="analysis-output" id="intelligenceOutput">
+       </div>
+      </div>
+     </section>
+     <section class="settings-section" id="section-personal">
+      <div class="settings-card"><h2>Your home, your way</h2><div class="field-row"><label for="greetingTone">Greeting style<small>Uses your device's local time and updates while Home is open.</small></label><select id="greetingTone"><option value="warm">Warm · Early bird / Night owl</option><option value="minimal">Minimal · Time of day</option></select></div><div class="field-row"><label for="welcomeAnimation">Welcome after onboarding<small>A brief transition into your real music feed.</small></label><input id="welcomeAnimation" type="checkbox" checked></div><p>Choose what appears first in your music space. Changes save automatically.</p><div class="field-row"><label for="homeArtists">Artist shortcuts<small>Your selected artists at the top.</small></label><input id="homeArtists" type="checkbox" checked></div><div class="field-row"><label for="homeRecent">Recently played<small>Continue your listening.</small></label><input id="homeRecent" type="checkbox" checked></div><div class="field-row"><label for="homeAlbums">Albums for you<small>Show full releases above mixes.</small></label><input id="homeAlbums" type="checkbox" checked></div><div class="field-row"><label for="homeMixes">Daily mixes<small>Personal collections on your home page.</small></label><input id="homeMixes" type="checkbox" checked></div></div><div class="settings-card"><h2>Make it feel like you</h2><p>Typography, artwork and glass surfaces across your workspace.</p><div class="field-row"><label for="typography">Font pairing</label><select id="typography"><option value="curated">Curated · Manrope / Inter / Roboto</option><option value="inter">Inter · clean and precise</option><option value="manrope">Manrope · soft and expressive</option><option value="roboto">Roboto · familiar and readable</option></select></div><div class="field-row"><label for="glass">Glass intensity</label><select id="glass"><option value="balanced">Balanced glass</option><option value="rich">Deep glass</option><option value="off">Solid surfaces</option></select></div><div class="field-row"><label for="artworkFit">Artwork framing</label><select id="artworkFit"><option value="contain">Fit complete artwork</option><option value="cover">Fill frame · cropped</option></select></div><div class="field-row"><label for="cardSize">Album card size</label><select id="cardSize"><option value="balanced">Balanced</option><option value="large">Large artwork</option><option value="small">More on screen</option></select></div></div>
+      <div class="settings-card">
+       <span class="eyebrow">
+        YOUR IDENTITY
+       </span>
+       <div class="profile-card">
+        <div class="profile-portrait" id="profileAvatar">
+        </div>
+        <div>
+         <h2 id="profileName">
+          Your profile
+         </h2>
+         <p id="profileCountry">
+          Choose your favorite artists and listening languages.
+         </p>
+         <button class="soft-button" id="editTaste">
+          Edit onboarding preferences
+         </button>
+        </div>
+       </div>
+       <div class="field-row">
+        <label for="discoveryLevel">
+         Discovery intensity
+         <small>
+          Balance familiar artists and new voices.
+         </small>
+        </label>
+        <div class="range-label">
+         <input id="discoveryLevel" max="100" min="0" type="range" value="35"/>
+         <output id="discoveryValue">
+          35%
+         </output>
+        </div>
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Your music DNA
+       </h2>
+       <div class="taste-summary" id="tasteSummary">
+       </div>
+      </div>
+      <div class="settings-card">
+       <h2>
+        Favorite artist portraits
+       </h2>
+       <p>
+        Official Wikipedia article images when available; images are cached locally in your browser for faster display.
+       </p>
+       <div class="setting-artist-gallery" id="favoriteArtistGallery">
+       </div>
+      </div>
+     </section>
+     <section class="settings-section" id="section-privacy">
+      <div class="settings-card">
+       <span class="eyebrow">
+        OWN YOUR DATA
+       </span>
+       <h2>
+        Browser-only listening data
+       </h2>
+       <p>
+        Mousike saves preferences, likes, playlist metadata, activity, and your optional key to your browser. The server performs requests without persisting personal profiles.
+       </p>
+       <div class="stat-grid" id="dataStats">
+       </div>
+       <div class="actions-row">
+        <button class="soft-button" id="exportData" type="button">
+         Export JSON (without API key)
+        </button>
+        <button class="soft-button" id="clearHistory" type="button">
+         Clear recent history
+        </button>
+        <label class="soft-button import-control">
+         Import music data
+         <input accept="application/json,.json" hidden="" id="importData" type="file"/>
+        </label>
+       </div>
+      </div>
+      <div class="settings-card danger-zone">
+       <h2>
+        Reset your intelligence
+       </h2>
+       <p>
+        Remove listening signals, learned analysis, recommendations and saved Gemini key. Your liked tracks and playlists are preserved.
+       </p>
+       <button class="soft-button danger" id="eraseIntelligence">
+        Delete AI history &amp; key
+       </button>
+      </div>
+     </section>
+     <section class="settings-section" id="section-shortcuts">
+      <div class="settings-card">
+       <h2>
+        Keyboard shortcuts
+       </h2>
+       <div class="shortcut-line">
+        <span>
+         Play / pause
+        </span>
+        <kbd>
+         Space
+        </kbd>
+       </div>
+       <div class="shortcut-line">
+        <span>
+         Focus search
+        </span>
+        <kbd>
+         /
+        </kbd>
+       </div>
+       <div class="shortcut-line">
+        <span>
+         Close overlays
+        </span>
+        <kbd>
+         Esc
+        </kbd>
+       </div>
+       <div class="shortcut-line">
+        <span>
+         Return to listening
+        </span>
+        <kbd>
+         Backspace
+        </kbd>
+       </div>
+       <p>
+        Shortcuts operate while the Mousike player has focus; input fields are excluded.
+       </p>
+      </div>
+     </section>
+     <section class="settings-section" id="section-about">
+      <div class="settings-card about-card">
+       <img alt="Mousike" src="/assets/brand/mousike-mark-static.svg?v=6"/>
+       <span class="eyebrow">
+        SOUND IN MOTION
+       </span>
+       <h2>
+        Mousike
+       </h2>
+       <p>
+        A personal music workspace for discovery, listening, albums, and intelligent recommendations. Built with FastAPI, yt-dlp, MusicBrainz, Wikipedia image metadata, Web Audio, and optional Gemini.
+       </p>
+       <small>
+        Independent project. Not affiliated with Spotify, YouTube Music, Google, or Wikipedia.
+       </small>
+      </div>
+     </section>
+    </div>
+    <footer class="settings-bottom">
+     <span aria-live="polite" id="saveStatus" role="status">
+      Your changes are saved automatically
+     </span>
+     <button class="primary-button" id="backToMusic">
+      Back to music
+      <svg>
+       <use href="#ic-arrow">
+       </use>
+      </svg>
+     </button>
+    </footer>
+   </main>
+  </div>
+  <script defer="" src="/assets/js/settings.js?v=7">
+  </script>
+ </body>
+</html>

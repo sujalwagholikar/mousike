@@ -1,0 +1,11 @@
+MOUSIKE — ARTIST PHOTOGRAPHS
+
+Edit assets/js/artists.js. The mapping is shared by Home, onboarding, Settings
+and artist pages. Put replacement JPG/PNG/WebP files in assets/artists and point
+the artist name to /assets/artists/your-file.jpg. Prefer square crops with the
+performer's face visible. Keep attribution/license information in sources.json.
+
+All 19 original supplied JPGs and both original full SVG logo files are retained.
+Where a local photograph is absent, public Wikipedia metadata can provide a
+portrait through the same-origin image proxy. Unavailable images use a neutral
+fallback; no synthetic photograph or invented artist image is presented as real.

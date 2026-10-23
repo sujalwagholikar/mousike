@@ -1,0 +1,142 @@
+[
+  {
+    "artist": "Arijit Singh",
+    "filename": "arijit-singh.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Arijit_Singh",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Arijit_Singh_performance_at_Chandigarh_2025.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Shreya Ghoshal",
+    "filename": "shreya-ghoshal.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Shreya_Ghoshal",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Shreya_Ghoshal_Behindwoods_Gold_Icons_Awards_2023_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "A. R. Rahman",
+    "filename": "a-r-rahman.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/A._R._Rahman",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/1/10/AR_Rahman_at_Premier_Futsal_Press_Meet_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Sonu Nigam",
+    "filename": "sonu-nigam.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Sonu_Nigam",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/7/76/Sonu_Nigam123.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Pritam",
+    "filename": "pritam.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Pritam_Chakraborty",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Pritam_Live_%28cropped%29.jpg/960px-Pritam_Live_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Atif Aslam",
+    "filename": "atif-aslam.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Atif_Aslam",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Atif_Aslam_at_Badlapur_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "The Weeknd",
+    "filename": "the-weeknd.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/The_Weeknd",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/The_Weeknd_Portrait_by_Brian_Ziff.jpg/960px-The_Weeknd_Portrait_by_Brian_Ziff.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Taylor Swift",
+    "filename": "taylor-swift.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Taylor_Swift",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png/960px-Taylor_Swift_at_the_2023_MTV_Video_Music_Awards_%283%29.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Billie Eilish",
+    "filename": "billie-eilish.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Billie_Eilish",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/c/c7/BillieEilishO2140725-39_-_54665577407_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Lana Del Rey",
+    "filename": "lana-del-rey.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Lana_Del_Rey",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/LanaDRPrimavera310524_%2832_of_147%29_%2853765476960%29_%28cropped%29.jpg/960px-LanaDRPrimavera310524_%2832_of_147%29_%2853765476960%29_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Diljit Dosanjh",
+    "filename": "diljit-dosanjh.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Diljit_Dosanjh",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Diljit_Dosanjh.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "KK",
+    "filename": "kk.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/KK_%28singer%29",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/KK_%28125%29.jpg/960px-KK_%28125%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Kishore Kumar",
+    "filename": "kishore-kumar.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Kishore_Kumar",
+    "status": "failed",
+    "error": "429 Client Error: Too many requests (76af2b0) for url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Kishore_Kumar_2016_postcard_of_India_%28cropped%29.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "artist": "Lata Mangeshkar",
+    "filename": "lata-mangeshkar.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Lata_Mangeshkar",
+    "image_source": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Lata_Mangeshkar_-_still_29065_crop.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled",
+    "status": "downloaded"
+  },
+  {
+    "artist": "Badshah",
+    "filename": "badshah.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Badshah_%28rapper%29",
+    "image_source": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Badshah_in_2017_at_Mirchi_Music_Awards.png/960px-Badshah_in_2017_at_Mirchi_Music_Awards.png?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+    "status": "downloaded"
+  },
+  {
+    "artist": "AP Dhillon",
+    "filename": "ap-dhillon.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/AP_Dhillon",
+    "status": "failed",
+    "error": "429 Client Error: Too many requests (76af2b0) for url: https://upload.wikimedia.org/wikipedia/commons/9/95/AP_Dhillon_CA.jpg?utm_source=en.wikipedia.org&utm_campaign=api&utm_content=thumbnail_unscaled"
+  },
+  {
+    "artist": "Drake",
+    "filename": "drake.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Drake_%28musician%29",
+    "status": "failed",
+    "error": "429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=pageimages&titles=Drake+%28musician%29&redirects=1&piprop=thumbnail&pithumbsize=750&pilicense=free"
+  },
+  {
+    "artist": "Coldplay",
+    "filename": "coldplay.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Coldplay",
+    "status": "failed",
+    "error": "429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=pageimages&titles=Coldplay&redirects=1&piprop=thumbnail&pithumbsize=750&pilicense=free"
+  },
+  {
+    "artist": "BTS",
+    "filename": "bts.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/BTS",
+    "status": "failed",
+    "error": "429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=pageimages&titles=BTS&redirects=1&piprop=thumbnail&pithumbsize=750&pilicense=free"
+  },
+  {
+    "artist": "Ed Sheeran",
+    "filename": "ed-sheeran.jpg",
+    "wikipedia_page": "https://en.wikipedia.org/wiki/Ed_Sheeran",
+    "status": "failed",
+    "error": "429 Client Error: Too Many Requests for url: https://en.wikipedia.org/w/api.php?action=query&format=json&formatversion=2&prop=pageimages&titles=Ed+Sheeran&redirects=1&piprop=thumbnail&pithumbsize=750&pilicense=free"
+  }
+]

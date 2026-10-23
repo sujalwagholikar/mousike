@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <script defer="True" src="/assets/js/data.js">
+  </script>
+  <script defer="True" src="/assets/js/artists.js">
+  </script>
+  <link href="/assets/fonts/fonts.css?v=6" rel="stylesheet"/>
+  <link href="/assets/css/system.css?v=6" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="#0b0e0c" name="theme-color"/>
+  <title>
+   Make it yours · Mousike — Sound In motion
+  </title>
+  <link href="/assets/brand/mousike-mark-static.svg?v=6" rel="icon" type="image/svg+xml"/>
+  <link href="/assets/css/onboarding-lite.css?v=6" rel="stylesheet"/>
+  <link href="/assets/css/glass-pages.css?v=1" rel="stylesheet"/>
+  <script defer="" src="/assets/js/onboarding-lite.js?v=6">
+  </script>
+  <!-- EDIT ARTIST IMAGE PATHS HERE. Place your JPG/PNG/WebP images in assets/artists/. -->
+ </head>
+ <body>
+  <svg aria-hidden="true" class="defs" xmlns="http://www.w3.org/2000/svg">
+   <symbol id="ic-arrow" viewbox="0 0 24 24">
+    <path d="M5 12h14m-6-6 6 6-6 6">
+    </path>
+   </symbol>
+   <symbol id="ic-back" viewbox="0 0 24 24">
+    <path d="m14 5-7 7 7 7">
+    </path>
+   </symbol>
+   <symbol id="ic-check" viewbox="0 0 24 24">
+    <path d="m5 12 5 5L20 7">
+    </path>
+   </symbol>
+   <symbol id="ic-search" viewbox="0 0 24 24">
+    <circle cx="10.5" cy="10.5" r="6.5">
+    </circle>
+    <path d="m16 16 5 5">
+    </path>
+   </symbol>
+   <symbol id="ic-upload" viewbox="0 0 24 24">
+    <path d="M12 16V3m-5 5 5-5 5 5M4 16v4h16v-4">
+    </path>
+   </symbol>
+   <symbol id="ic-headphones" viewbox="0 0 24 24">
+    <path d="M3 13v-2a9 9 0 0 1 18 0v2">
+    </path>
+    <rect height="9" rx="2" width="4" x="2" y="12">
+    </rect>
+    <rect height="9" rx="2" width="4" x="18" y="12">
+    </rect>
+   </symbol>
+   <symbol id="ic-disc" viewbox="0 0 24 24">
+    <circle cx="12" cy="12" r="9">
+    </circle>
+    <circle cx="12" cy="12" r="2">
+    </circle>
+   </symbol>
+   <symbol id="ic-moon" viewbox="0 0 24 24">
+    <path d="M20 14.3A8.5 8.5 0 0 1 9.7 4 8.5 8.5 0 1 0 20 14.3Z">
+    </path>
+   </symbol>
+   <symbol id="ic-wave" viewbox="0 0 24 24">
+    <path d="M2 12c2.5-4 5-4 7.5 0s5 4 7.5 0 5-4 5-4">
+    </path>
+   </symbol>
+   <symbol id="ic-mic" viewbox="0 0 24 24">
+    <rect height="12" rx="3" width="6" x="9" y="2">
+    </rect>
+    <path d="M5 10a7 7 0 0 0 14 0M12 17v5m-4 0h8">
+    </path>
+   </symbol>
+   <symbol id="ic-globe" viewbox="0 0 24 24">
+    <circle cx="12" cy="12" r="9">
+    </circle>
+    <path d="M3 12h18M12 3c-6 7-6 11 0 18M12 3c6 7 6 11 0 18">
+    </path>
+   </symbol>
+   <symbol id="ic-spark" viewbox="0 0 24 24">
+    <path d="m12 2 2.5 7.5L22 12l-7.5 2.5L12 22l-2.5-7.5L2 12l7.5-2.5L12 2Z">
+    </path>
+   </symbol>
+  </svg>
+  <div class="page">
+   <header class="page-header">
+    <a aria-label="Mousike home" class="logo" href="/">
+     <img alt="" height="42" src="/assets/brand/mousike-mark-static.svg?v=6" width="42"/>
+     <span>
+      <strong>
+       Mousike
+      </strong>
+      <small>
+       Sound In motion
+      </small>
+     </span>
+    </a>
+    <span class="header-note">
+     A listening experience made for you.
+    </span>
+    <a class="skip" href="/" id="skip">
+     Skip for now
+    </a>
+   </header>
+   <main class="shell" id="shell">
+    <div class="eyebrow">
+     <span class="pulse-dot">
+     </span>
+     YOUR LISTENING PROFILE
+     <span class="eyebrow-right" id="stepLabel">
+      STEP 01 OF 04
+     </span>
+    </div>
+    <div aria-label="Onboarding progress" class="progress">
+     <div id="bar">
+     </div>
+    </div>
+    <section aria-labelledby="stepTitle0" class="view visible" data-step="0">
+     <div class="intro">
+      <span class="section-number">
+       01 / YOUR IDENTITY
+      </span>
+      <h1 id="stepTitle0">
+       Let’s start with
+       <em>
+        you.
+       </em>
+      </h1>
+      <p>
+       Just a few details. Everything stays in this browser, and you can always change it later.
+      </p>
+     </div>
+     <div class="card">
+      <label class="field-label" for="name">
+       What should we call you?
+      </label>
+      <input autocomplete="nickname" class="field" id="name" maxlength="48" placeholder="Your first name or nickname" type="text"/>
+      <label class="field-label second" for="country">
+       Where are you listening from?
+      </label>
+      <div class="select-wrap">
+       <svg>
+        <use href="#ic-globe">
+        </use>
+       </svg>
+       <select class="field" id="country">
+        <option>
+         India
+        </option>
+        <option>
+         United States
+        </option>
+        <option>
+         United Kingdom
+        </option>
+        <option>
+         Canada
+        </option>
+        <option>
+         Australia
+        </option>
+        <option>
+         Pakistan
+        </option>
+        <option>
+         Bangladesh
+        </option>
+        <option>
+         Nepal
+        </option>
+        <option>
+         Sri Lanka
+        </option>
+        <option>
+         Germany
+        </option>
+        <option>
+         France
+        </option>
+        <option>
+         Japan
+        </option>
+        <option>
+         South Korea
+        </option>
+        <option>
+         Brazil
+        </option>
+        <option>
+         United Arab Emirates
+        </option>
+        <option>
+         Other
+        </option>
+       </select>
+      </div>
+      <div class="label-row">
+       <span class="field-label">
+        Pick a profile style
+       </span>
+       <span class="micro">
+        Optional
+       </span>
+      </div>
+      <div class="avatar-grid" id="avatars">
+      </div>
+      <label class="upload-label" for="avatarFile">
+       <svg>
+        <use href="#ic-upload">
+        </use>
+       </svg>
+       Or upload a photo
+       <span id="avatarStatus">
+       </span>
+       <input accept="image/png,image/jpeg,image/webp" id="avatarFile" type="file"/>
+      </label>
+     </div>
+    </section>
+    <section aria-labelledby="stepTitle1" class="view" data-step="1" hidden="">
+     <div class="intro">
+      <span class="section-number">
+       02 / YOUR LANGUAGES
+      </span>
+      <h1 id="stepTitle1">
+       Music speaks
+       <em>
+        your language.
+       </em>
+      </h1>
+      <p>
+       What do you love listening to? Pick one or more.
+      </p>
+     </div>
+     <div class="card">
+      <div class="label-row">
+       <span class="field-label">
+        Languages
+       </span>
+       <span class="micro" id="languageCount">
+        0 selected
+       </span>
+      </div>
+      <div class="pills" id="languages">
+      </div>
+      <p class="hint">
+       Pick multiple languages for a wider mix.
+      </p>
+     </div>
+    </section>
+    <section aria-labelledby="stepTitle2" class="view" data-step="2" hidden="">
+     <div class="intro">
+      <span class="section-number">
+       03 / FAVORITE ARTISTS
+      </span>
+      <h1 id="stepTitle2">
+       Voices you
+       <em>
+        come back to.
+       </em>
+      </h1>
+      <p>
+       Choose your favorites. We’ll put them at the heart of your recommendations.
+      </p>
+     </div>
+     <div class="card artists-card">
+      <div class="artist-toolbar">
+       <label class="search-field">
+        <svg>
+         <use href="#ic-search">
+         </use>
+        </svg>
+        <input aria-label="Search suggested artists" autocomplete="off" id="artistFilter" placeholder="Search artists" type="search"/>
+       </label>
+       <span class="micro" id="artistCount">
+        0 selected
+       </span>
+      </div>
+      <div aria-label="Choose favorite singers" class="artist-grid" id="artists">
+      </div>
+      <p class="wiki-caption">
+       Artist photos from your collection and Wikipedia.
+      </p>
+      <div class="add-row">
+       <input class="field" id="customArtist" maxlength="70" placeholder="Add another artist"/>
+       <button class="add-button" id="addArtist" type="button">
+        Add artist
+       </button>
+      </div>
+     </div>
+    </section>
+    <section aria-labelledby="stepTitle3" class="view" data-step="3" hidden="">
+     <div class="intro">
+      <span class="section-number">
+       04 / YOUR SOUND
+      </span>
+      <h1 id="stepTitle3">
+       Fine-tune
+       <em>
+        your frequency.
+       </em>
+      </h1>
+      <p>
+       Build a music space that shifts with your mood.
+      </p>
+     </div>
+     <div class="card">
+      <div class="settings-group">
+       <div class="label-row">
+        <span class="field-label">
+         Genres
+        </span>
+        <span class="micro">
+         Choose your favorites
+        </span>
+       </div>
+       <div class="pills" id="genres">
+       </div>
+      </div>
+      <div class="settings-group">
+       <div class="label-row">
+        <span class="field-label">
+         Moods
+        </span>
+       </div>
+       <div class="pills" id="moods">
+       </div>
+      </div>
+      <div class="settings-group">
+       <div class="label-row">
+        <span class="field-label">
+         Eras
+        </span>
+       </div>
+       <div class="pills" id="decades">
+       </div>
+      </div>
+      <div class="settings-group">
+       <div class="label-row">
+        <span class="field-label">
+         Signature color
+        </span>
+       </div>
+       <div class="pills" id="palettes">
+       </div>
+      </div>
+      <div class="settings-group">
+       <div class="label-row">
+        <label class="field-label" for="discovery">
+         Discovery level
+        </label>
+        <output class="micro" id="discoveryLabel">
+         35%
+        </output>
+       </div>
+       <input id="discovery" max="100" min="0" type="range" value="35"/>
+       <div class="range-notes">
+        <span>
+         Play favorites
+        </span>
+        <span>
+         Explore new music
+        </span>
+       </div>
+      </div>
+     </div>
+    </section>
+    <footer class="footer" id="footer">
+     <button class="back" id="back" type="button">
+      <svg>
+       <use href="#ic-back">
+       </use>
+      </svg>
+      Back
+     </button>
+     <span class="footer-helper" id="feedback" role="status">
+      Your choices stay on this device
+     </span>
+     <button class="next" id="continue" type="button">
+      Continue
+     </button>
+    </footer>
+   </main>
+   <p class="bottom-note">
+    MOUSIKE
+    <span>
+     ·
+    </span>
+    SOUND IN MOTION
+    <span>
+     ·
+    </span>
+    YOUR MUSIC, YOUR WAY
+   </p>
+  </div>
+ </body>
+</html>

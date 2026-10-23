@@ -1,0 +1,8 @@
+{
+  "name":"mousike-browser-checks",
+  "version":"3.0.0",
+  "private":true,
+  "description":"Optional browser integration tests; no Node build is needed to run Mousike",
+  "scripts":{"test":"python tests/run_browser.py"},
+  "devDependencies":{"playwright":"1.60.0"}
+}
