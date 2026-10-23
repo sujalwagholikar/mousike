@@ -1,8 +1,21 @@
-# Vercel recognizes the existing FastAPI app; no JS frontend build is required.
+
+[project]
+name = "mousike"
+version = "3.0.0"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "fastapi==0.161.1",
+    "uvicorn==0.54.0",
+    "httpx[socks]==0.28.1",
+    "yt-dlp[default]==2026.10.21",
+    "python-dotenv==1.2.4",
+    "nodejs-wheel==24.19.0",
+    "imageio-ffmpeg==0.6.0"
+]
+
 [tool.vercel]
 entrypoint = "main:app"
 
-# Assets are public. SecurityMiddleware protects the API/HTML, not public assets.
 [tool.vercel.fastapi.static]
 cdn = true
 exclude = false
