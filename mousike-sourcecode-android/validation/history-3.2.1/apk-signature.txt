@@ -1,0 +1,4 @@
+Signer #1 certificate DN: CN=Mousike Development, O=Mousike, C=IN
+Signer #1 certificate SHA-256 digest: 7090ce85e42cea840a7b11dbaead24ea10e52cb1bf29bdc1fce89dd097260b82
+Signer #1 certificate SHA-1 digest: 4cbb61e05f33c35e6e66b9a704d2a77706bb4e9d
+Signer #1 certificate MD5 digest: f8a6ba5451c26441b39a55440b5df8aa

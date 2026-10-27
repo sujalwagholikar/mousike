@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.TasteRankerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-10-26T06:20:17.966Z" hostname="8dea5f7111fa" time="0.042">
+  <properties/>
+  <testcase name="artistDiversity" classname="com.mousike.app.TasteRankerTest" time="0.02"/>
+  <testcase name="deterministic" classname="com.mousike.app.TasteRankerTest" time="0.008"/>
+  <testcase name="noFabricatedCandidates" classname="com.mousike.app.TasteRankerTest" time="0.004"/>
+  <testcase name="empty" classname="com.mousike.app.TasteRankerTest" time="0.001"/>
+  <testcase name="excludesCurrent" classname="com.mousike.app.TasteRankerTest" time="0.001"/>
+  <testcase name="artistFeedback" classname="com.mousike.app.TasteRankerTest" time="0.005"/>
+  <testcase name="repeatPenalty" classname="com.mousike.app.TasteRankerTest" time="0.001"/>
+  <testcase name="skipsReduceAffinity" classname="com.mousike.app.TasteRankerTest" time="0.001"/>
+  <testcase name="duplicatePublishers" classname="com.mousike.app.TasteRankerTest" time="0.0"/>
+  <testcase name="blocksSongs" classname="com.mousike.app.TasteRankerTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,23 @@
+{
+  "baseline": "mosuiké 3.6.0",
+  "current": "Mousiké 3.6.0",
+  "version_code": 360,
+  "changed_existing_runtime_files": [
+    "app/src/main/java/com/mousike/app/data/remote/YouTubeMusicClient.kt",
+    "app/src/main/java/com/mousike/app/data/repository/MusicRepository.kt",
+    "app/src/main/java/com/mousike/app/ui/components/DailySpotlight.kt",
+    "app/src/main/java/com/mousike/app/ui/components/MusicArtwork.kt",
+    "app/src/main/java/com/mousike/app/ui/components/PersonalMixes.kt",
+    "app/src/main/java/com/mousike/app/ui/components/PreparationScreen.kt",
+    "app/src/main/java/com/mousike/app/ui/screens/AboutScreen.kt",
+    "app/src/main/java/com/mousike/app/ui/screens/HomeScreen.kt",
+    "app/src/main/java/com/mousike/app/ui/screens/OnboardingScreen.kt",
+    "app/src/main/java/com/mousike/app/ui/screens/PlaylistDetailScreen.kt",
+    "app/src/main/java/com/mousike/app/ui/screens/SettingsScreen.kt",
+    "app/src/main/java/com/mousike/app/ui/viewmodel/MousikeViewModel.kt",
+    "app/src/main/res/values/strings.xml"
+  ],
+  "all_playback_settings_performance_download_album_source_identical": true,
+  "native_runtime_and_ytdlp_identical": true,
+  "apk_sha256": "88b510f4e1a4200f95662213feda8232a4f0ce6e89463ecead3166bd4ebb3bb7"
+}

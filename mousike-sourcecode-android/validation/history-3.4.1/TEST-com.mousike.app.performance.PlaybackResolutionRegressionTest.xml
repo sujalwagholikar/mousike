@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.PlaybackResolutionRegressionTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-26T06:20:18.613Z" hostname="8dea5f7111fa" time="0.542">
+  <properties/>
+  <testcase name="cipheredAudioDoesNotMasqueradeAsReadyAudio" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.059"/>
+  <testcase name="directAudioQualityIsChosenWithoutVideo" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.054"/>
+  <testcase name="restrictedAndMismatchedResponsesAreRejected" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.049"/>
+  <testcase name="hlsParserIsChosenAfterResolvingAndSharedSegmentKeyRemoved" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.072"/>
+  <testcase name="hlsOnlyResponseRemainsPlayableWithoutPython" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.048"/>
+  <testcase name="progressiveAudioKeepsItsQualitySpecificCacheKey" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.046"/>
+  <testcase name="alreadyCancelledRequestCannotStartNetworkWork" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.041"/>
+  <testcase name="replacingTrackCancelsBlockedResolutionPromptly" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.044"/>
+  <testcase name="slowExtractionHasRealDeadlineAndCancelsItsProcessHook" classname="com.mousike.app.performance.PlaybackResolutionRegressionTest" time="0.126"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

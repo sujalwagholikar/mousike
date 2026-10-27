@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="androidx.media3.session.NotificationPlayerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2026-10-26T08:59:28.932Z" hostname="7c0ad2165a93" time="3.019">
+  <properties/>
+  <testcase name="notificationContainsSessionMetadataAndPreviousPlayNextControls" classname="androidx.media3.session.NotificationPlayerTest" time="3.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

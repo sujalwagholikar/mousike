@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.AlbumDetectorTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-26T05:02:06.246Z" hostname="8dea5f7111fa" time="0.062">
+  <properties/>
+  <testcase name="catalogMatchRequiresAgreement" classname="com.mousike.app.AlbumDetectorTest" time="0.027"/>
+  <testcase name="chapterClips" classname="com.mousike.app.AlbumDetectorTest" time="0.015"/>
+  <testcase name="threshold" classname="com.mousike.app.AlbumDetectorTest" time="0.0"/>
+  <testcase name="chapterCodecRoundTrip" classname="com.mousike.app.AlbumDetectorTest" time="0.001"/>
+  <testcase name="hoursAndMinutes" classname="com.mousike.app.AlbumDetectorTest" time="0.0"/>
+  <testcase name="explicitRanges" classname="com.mousike.app.AlbumDetectorTest" time="0.006"/>
+  <testcase name="titleBeforeAndNumberedRows" classname="com.mousike.app.AlbumDetectorTest" time="0.005"/>
+  <testcase name="descriptionWithoutChapters" classname="com.mousike.app.AlbumDetectorTest" time="0.003"/>
+  <testcase name="zeroLengthRejected" classname="com.mousike.app.AlbumDetectorTest" time="0.001"/>
+  <testcase name="overlapsClamped" classname="com.mousike.app.AlbumDetectorTest" time="0.001"/>
+  <testcase name="validatesAndSortsBoundaries" classname="com.mousike.app.AlbumDetectorTest" time="0.0"/>
+  <testcase name="rejectsImpossibleTime" classname="com.mousike.app.AlbumDetectorTest" time="0.001"/>
+  <testcase name="neverInventsTimestamps" classname="com.mousike.app.AlbumDetectorTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

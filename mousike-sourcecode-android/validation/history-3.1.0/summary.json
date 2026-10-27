@@ -1,0 +1,37 @@
+{
+  "unit_tests": [
+    {
+      "name": "com.mousike.app.AlbumDetectorTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.CatalogParserTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.PersistenceTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.TasteRankerTest",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.performance.PerformanceRegressionTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "apk_sha256": "522144aea2d02e5818b0f046d16f0b5b1c42c1efb6de74177fe40ecb206c0994",
+  "native_status": "The initial suite passed 4 of 7 tests: offline download/playback; onboarding/search/likes/queue/background playback; bundled Python/QuickJS/FFmpeg execution; and local-startup/browsing-update suppression. Album playback (15 s) and chapter playback (10 s) waits timed out during the concurrent build. A third failure exposed a delayed queue-save/reset race, which was corrected in the final APK. The final targeted startup/reset run timed out at 180 s; the following adb diagnostic also timed out. The final end-to-end device check is therefore **incomplete**, and the two playback timeouts remain unverified. No live phone startup timing or universal latency guarantee is claimed.",
+  "lint": "not completed; dependency blocked; omitted in final fast package"
+}

@@ -1,0 +1,34 @@
+name: Windows desktop
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run runtime
+      - run: npm test
+      - run: npm run bundle
+      - run: npm run test:desktop
+      - name: Install NSIS compiler
+        run: choco install nsis --no-progress -y
+      - name: Build installer
+        run: npm run dist:win
+        env:
+          MAKENSIS: C:\Program Files (x86)\NSIS\makensis.exe
+      - name: Check packaged desktop
+        run: npm run test:desktop
+        env:
+          MOUSIKE_TEST_EXE: ${{ github.workspace }}\dist\win-unpacked\Mousike.exe
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Mousike-3.6.0-Windows-x64
+          path: dist/*-Setup.exe

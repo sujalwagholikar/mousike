@@ -1,0 +1,53 @@
+{
+  "version": "3.2.0",
+  "unit_tests": [
+    {
+      "name": "com.mousike.app.PersistenceTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.TasteRankerTest",
+      "tests": "10",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.performance.OneTapRecoveryTest",
+      "tests": "6",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.performance.PlaybackResolutionRegressionTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.AlbumDetectorTest",
+      "tests": "13",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.CatalogParserTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0"
+    },
+    {
+      "name": "com.mousike.app.performance.PerformanceRegressionTest",
+      "tests": "9",
+      "failures": "0",
+      "errors": "0"
+    }
+  ],
+  "unique_android_checks": 9,
+  "android_suite": 8,
+  "final_next_recheck": 1,
+  "live_audio_delivery": "unverified; environment returned HTML for manifest",
+  "sha256": "41be6042c5d079bfff03de61c9b6932279531cc1ea18e56aaf518327ffdfa370",
+  "certificate_sha256": "7090ce85e42cea840a7b11dbaead24ea10e52cb1bf29bdc1fce89dd097260b82"
+}

@@ -1,0 +1,1 @@
+{"code": -1, "error": "Command '['/workspace/scratch/8c324a8f6244/.build-tools/sdk/platform-tools/adb', 'logcat', '-d', '-s', 'MousikeSpeed:I', '*:S']' timed out after 30 seconds"}

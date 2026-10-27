@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.settings.AppearancePersistenceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-26T12:13:44.887Z" hostname="b2d680d24969" time="22.766">
+  <properties/>
+  <testcase name="qualityChangeWaitsForTheNextSongAndKeepsQueueAndPlayIntent" classname="com.mousike.app.settings.AppearancePersistenceTest" time="22.621"/>
+  <testcase name="upgradeAppliesCoralAndSquareOnceWithoutClearingProfile" classname="com.mousike.app.settings.AppearancePersistenceTest" time="0.051"/>
+  <testcase name="resettingAppearanceKeepsTasteAndPlaybackChoices" classname="com.mousike.app.settings.AppearancePersistenceTest" time="0.041"/>
+  <testcase name="customisationSurvivesSettingsRecreation" classname="com.mousike.app.settings.AppearancePersistenceTest" time="0.052"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[android.os.ServiceManager$ServiceNotFoundException: No service published for: media_metrics
+	at android.os.ServiceManager.getServiceOrThrow(ServiceManager.java:203)
+	at android.app.SystemServiceRegistry$131.createService(SystemServiceRegistry.java:1577)
+	at android.app.SystemServiceRegistry$131.createService(SystemServiceRegistry.java:1572)
+	at android.app.SystemServiceRegistry$CachedServiceFetcher.getService(SystemServiceRegistry.java:2231)
+	at android.app.SystemServiceRegistry.getSystemService(SystemServiceRegistry.java:1812)
+	at android.app.ContextImpl.getSystemService(ContextImpl.java:2241)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.robolectric.shadows.ShadowContextImpl$_ContextImpl_$$Reflector5.getSystemService(Unknown Source)
+	at org.robolectric.shadows.ShadowContextImpl.getSystemService(ShadowContextImpl.java:84)
+	at android.app.ContextImpl.getSystemService(ContextImpl.java)
+	at android.content.ContextWrapper.getSystemService(ContextWrapper.java:936)
+	at androidx.media3.exoplayer.analytics.MediaMetricsListener.create(MediaMetricsListener.java:107)
+	at androidx.media3.exoplayer.ExoPlayerImpl$Api31.lambda$registerMediaMetricsListener$0(ExoPlayerImpl.java:3443)
+	at android.os.Handler.handleCallback(Handler.java:959)
+	at android.os.Handler.dispatchMessage(Handler.java:100)
+	at android.os.Looper.loopOnce(Looper.java:232)
+	at android.os.Looper.loop(Looper.java:317)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at org.robolectric.shadows.ShadowPausedLooper$LooperReflector$$Reflector1.loop(Unknown Source)
+	at org.robolectric.shadows.ShadowPausedLooper.loop(ShadowPausedLooper.java:472)
+	at android.os.Looper.loop(Looper.java)
+	at android.os.HandlerThread.run(HandlerThread.java:85)
+]]></system-err>
+</testsuite>

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.dev/
+*.log
+runtime/*
+!runtime/.gitkeep
+!runtime/RUNTIME.md
+src/renderer/app.bundle.js
+tools/uninstall-files.nsh
+docs/*.png

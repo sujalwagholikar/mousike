@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.ResumingAudioTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-26T06:20:19.163Z" hostname="8dea5f7111fa" time="1.655">
+  <properties/>
+  <testcase name="seekAndExplicitLengthDoNotReadOrCacheTheWrongBytes" classname="com.mousike.app.performance.ResumingAudioTest" time="1.431"/>
+  <testcase name="prematureEofAlsoResumesRatherThanTruncatingTheSong" classname="com.mousike.app.performance.ResumingAudioTest" time="0.032"/>
+  <testcase name="serverIgnoringRangePlaysWithoutDuplicatingItsPrefix" classname="com.mousike.app.performance.ResumingAudioTest" time="0.028"/>
+  <testcase name="forbiddenAddressIsNotRepeated" classname="com.mousike.app.performance.ResumingAudioTest" time="0.028"/>
+  <testcase name="unavailableSourceHasBoundedRetries" classname="com.mousike.app.performance.ResumingAudioTest" time="0.032"/>
+  <testcase name="consecutiveRangesExposeTheWholeResourceNotTheFirstChunk" classname="com.mousike.app.performance.ResumingAudioTest" time="0.041"/>
+  <testcase name="incorrectContentRangeFailsBeforeWritingCorruptBytes" classname="com.mousike.app.performance.ResumingAudioTest" time="0.029"/>
+  <testcase name="timeoutAfterSomeAudioResumesAtTheLastDeliveredByteWithoutDuplication" classname="com.mousike.app.performance.ResumingAudioTest" time="0.034"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

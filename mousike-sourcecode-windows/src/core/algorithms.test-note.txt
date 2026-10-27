@@ -1,0 +1,1 @@
+Runtime algorithm implementations are translated from Android Kotlin sources. No Android playback binary is executed by the desktop application.

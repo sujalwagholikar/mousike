@@ -1,0 +1,9 @@
+{
+  "version": "3.4.0",
+  "unit_tests": 75,
+  "unique_android_tests": 12,
+  "final_android_rechecks": 2,
+  "sha256": "2d992bf573d0090669dc4cb83bbfebbfd8f86aa77bb8c6326f1991d79b8a2105",
+  "bytes": 83442640,
+  "live_audio": "unverified; live probe timed out"
+}

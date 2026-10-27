@@ -1,0 +1,16 @@
+{
+  "same_between_3_2_0_and_3_2_1": [
+    "app/src/main/java/com/mousike/app/playback/AudioCache.kt",
+    "app/src/main/java/com/mousike/app/playback/AudioPlayerEngine.kt",
+    "app/src/main/java/com/mousike/app/playback/VisitorSession.kt",
+    "app/src/main/java/com/mousike/app/playback/PlaybackDiagnostics.kt",
+    "app/src/main/java/com/mousike/app/playback/PlaybackService.kt",
+    "app/src/main/java/com/mousike/app/playback/NativeAudioResolver.kt",
+    "app/src/main/java/com/mousike/app/playback/YtDlpExtractor.kt",
+    "app/src/main/java/com/mousike/app/playback/StreamingMediaSource.kt",
+    "app/src/main/java/com/mousike/app/performance/FastMetadata.kt",
+    "app/src/main/java/com/mousike/app/performance/ResolutionSignal.kt",
+    "app/src/main/java/com/mousike/app/performance/ForegroundResolver.kt",
+    "app/src/main/java/com/mousike/app/performance/SingleFlightCache.kt"
+  ]
+}

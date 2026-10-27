@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.Stability34Test" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-10-26T05:42:00.745Z" hostname="8dea5f7111fa" time="0.599">
+  <properties/>
+  <testcase name="mediaContainerAndHlsSignaturesAreValidated" classname="com.mousike.app.performance.Stability34Test" time="0.002"/>
+  <testcase name="failedSpeculationDoesNotPoisonNextSelectedRequest" classname="com.mousike.app.performance.Stability34Test" time="0.043"/>
+  <testcase name="audioTrackAndDrcVariantsHaveDifferentCacheIdentities" classname="com.mousike.app.performance.Stability34Test" time="0.001"/>
+  <testcase name="preparationForAnotherSongIsCancelledOnSelection" classname="com.mousike.app.performance.Stability34Test" time="0.002"/>
+  <testcase name="cancelledSelectionCancelsItsHttpWork" classname="com.mousike.app.performance.Stability34Test" time="0.003"/>
+  <testcase name="segmentedOtfCannotEnterProgressivePlayer" classname="com.mousike.app.performance.Stability34Test" time="0.0"/>
+  <testcase name="badDirectAddressCannotWinOverActualPlaylist" classname="com.mousike.app.performance.Stability34Test" time="0.192"/>
+  <testcase name="tapPromotesInFlightPreparationInsteadOfStartingAgain" classname="com.mousike.app.performance.Stability34Test" time="0.084"/>
+  <testcase name="frozenPlayingClockIsDetectedButPauseAndSeekAreNot" classname="com.mousike.app.performance.Stability34Test" time="0.0"/>
+  <testcase name="stableAacDefaultTrackIsPreferredOverAlternateAndHigherBitrateWebm" classname="com.mousike.app.performance.Stability34Test" time="0.0"/>
+  <testcase name="slowDirectDoesNotHoldBackResponsiveAlternative" classname="com.mousike.app.performance.Stability34Test" time="0.189"/>
+  <testcase name="selectedDeadlineCancelsUnresponsivePreparation" classname="com.mousike.app.performance.Stability34Test" time="0.081"/>
+  <testcase name="htmlIsNotAcceptedJustBecauseStatusIsSuccessfulOrMimeSaysAudio" classname="com.mousike.app.performance.Stability34Test" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

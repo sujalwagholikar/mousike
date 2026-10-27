@@ -1,0 +1,10 @@
+{
+  "version": "3.3.0",
+  "unit_tests": 62,
+  "unique_android_tests": 10,
+  "final_android_smoke_rechecks": 2,
+  "sha256": "480bdc63513c4fdcedcf69482b95c0b997652938e927c4cf5a3b2b8598c0e07f",
+  "bytes": 83452532,
+  "live_audio": "unverified; media range returned HTML",
+  "high_refresh_hardware_benchmark": "not performed"
+}

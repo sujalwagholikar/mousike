@@ -1,0 +1,15 @@
+# Local/build files
+.gradle/
+.kotlin/
+**/build/
+local.properties
+.env
+.env.*
+.idea/
+*.iml
+*.apk
+*.aab
+*.jks
+*.keystore
+# Public development key is required by the supplied debug signing configuration.
+!signing/mousike-development.keystore

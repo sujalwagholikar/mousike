@@ -1,0 +1,491 @@
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/ui/components/MousikeDialogs.kt:234: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+                            text = "Active: ${String.format("%02d:%02d", m, s)} remaining",
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/ui/screens/PlayerFullScreen.kt:105: Warning: Implicitly using the default locale is a common source of bugs: Use String.format(Locale, ...) instead [DefaultLocale]
+        return String.format("%d:%02d", min, sec)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DefaultLocale":
+   Calling String#toLowerCase() or #toUpperCase() without specifying an
+   explicit locale is a common source of bugs. The reason for that is that
+   those methods will use the current locale on the user's device, and even
+   though the code appears to work correctly when you are developing the app,
+   it will fail in some locales. For example, in the Turkish locale, the
+   uppercase replacement for i is not I.
+
+   If you want the methods to just perform ASCII replacement, for example to
+   convert an enum name, call String#toUpperCase(Locale.ROOT) instead. If you
+   really want to use the current locale, call
+   String#toUpperCase(Locale.getDefault()) instead.
+
+   https://developer.android.com/reference/java/util/Locale.html#default_locale
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:13: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 35
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdkVersion specifies that it has been tested with,
+   various compatibility modes kick in. This ensures that your application
+   continues to work, but it may look out of place. For example, if the
+   targetSdkVersion is less than 14, your app may get an option button in the
+   UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/drawable/cover_dawn.xml:1: Warning: Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more [VectorRaster]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:width="512dp" android:height="512dp" android:viewportWidth="512" android:viewportHeight="512">
+                                                                                                                               ~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/drawable/cover_dusk.xml:1: Warning: Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more [VectorRaster]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:width="512dp" android:height="512dp" android:viewportWidth="512" android:viewportHeight="512">
+                                                                                                                               ~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/drawable/cover_orbit.xml:1: Warning: Limit vector icons sizes to 200×200 to keep icon drawing fast; see https://developer.android.com/studio/write/vector-asset-studio#when for more [VectorRaster]
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt" android:width="512dp" android:height="512dp" android:viewportWidth="512" android:viewportHeight="512">
+                                                                                                                               ~~~~~
+
+   Explanation for issues of type "VectorRaster":
+   Vector icons require API 21 or API 24 depending on used features, but when
+   minSdkVersion is less than 21 or 24 and Android Gradle plugin 1.4 or higher
+   is used, a vector drawable placed in the drawable folder is automatically
+   moved to drawable-anydpi-v21 or drawable-anydpi-v24 and bitmap images are
+   generated for different screen resolutions for backwards compatibility.
+
+   However, there are some limitations to this raster image generation, and
+   this lint check flags elements and attributes that are not fully supported.
+   You should manually check whether the generated output is acceptable for
+   those older devices.
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:9: Warning: A newer version of compileSdkVersion than 35 is available: 36 [GradleDependency]
+    compileSdk = 35
+    ~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:52: Warning: A newer version of androidx.media3:media3-exoplayer than 1.6.1 is available: 1.11.1 [GradleDependency]
+    implementation("androidx.media3:media3-exoplayer:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:53: Warning: A newer version of androidx.media3:media3-exoplayer-hls than 1.6.1 is available: 1.11.1 [GradleDependency]
+    implementation("androidx.media3:media3-exoplayer-hls:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:54: Warning: A newer version of androidx.media3:media3-session than 1.6.1 is available: 1.11.1 [GradleDependency]
+    implementation("androidx.media3:media3-session:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:55: Warning: A newer version of androidx.media3:media3-datasource-okhttp than 1.6.1 is available: 1.11.1 [GradleDependency]
+    implementation("androidx.media3:media3-datasource-okhttp:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:12: Warning: A newer version of androidx.compose:compose-bom than 2024.09.00 is available: 2025.04.01 [GradleDependency]
+composeBom = "2024.09.00"
+             ~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:15: Warning: A newer version of androidx.room:room-runtime than 2.7.0 is available: 2.7.1 [GradleDependency]
+roomRuntime = "2.7.0"
+              ~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:16: Warning: A newer version of androidx.room:room-ktx than 2.7.0 is available: 2.7.1 [GradleDependency]
+roomKtx = "2.7.0"
+          ~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:17: Warning: A newer version of androidx.room:room-compiler than 2.7.0 is available: 2.7.1 [GradleDependency]
+roomCompiler = "2.7.0"
+               ~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:33: Warning: A newer version of com.squareup.okhttp3:okhttp than 4.10.0 is available: 4.12.0 [GradleDependency]
+okhttp = "4.10.0"
+         ~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:61: Warning: A newer version of org.robolectric:robolectric than 4.14.1 is available: 4.17 [NewerVersionAvailable]
+    testImplementation("org.robolectric:robolectric:4.14.1")
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:22: Warning: A newer version of com.squareup.retrofit2:retrofit than 2.12.0 is available: 3.0.0 [NewerVersionAvailable]
+retrofit = "2.12.0"
+           ~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:25: Warning: A newer version of org.jetbrains.kotlinx:kotlinx-coroutines-core than 1.10.2 is available: 1.11.0 [NewerVersionAvailable]
+kotlinxCoroutinesCore = "1.10.2"
+                        ~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/gradle/libs.versions.toml:37: Warning: A newer version of org.robolectric:robolectric than 4.16.1 is available: 4.17 [NewerVersionAvailable]
+robolectric = "4.16.1"
+              ~~~~~~~~
+
+   Explanation for issues of type "NewerVersionAvailable":
+   This detector checks with a central repository to see if there are newer
+   versions available for the dependencies used by this project. This is
+   similar to the GradleDependency check, which checks for newer versions
+   available in the Android SDK tools and libraries, but this works with any
+   MavenCentral dependency, and connects to the library every time, which
+   makes it more flexible but also much slower.
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/AndroidManifest.xml:18: Warning: Exported service does not require permission [ExportedService]
+        <service android:name=".playback.PlaybackService" android:foregroundServiceType="mediaPlayback" android:exported="true">
+         ~~~~~~~
+
+   Explanation for issues of type "ExportedService":
+   Exported services (services which either set exported=true or contain an
+   intent-filter and do not specify exported=false) should define a permission
+   that an entity must have in order to launch the service or bind to it.
+   Without this, any application can use this service.
+
+   https://goo.gle/ExportedService
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/AndroidManifest.xml:10: Warning: The attribute android:allowBackup is deprecated from Android 12 and higher and may be removed in future versions. Consider adding the attribute android:dataExtractionRules specifying an @xml resource which configures cloud backups and device transfers on Android 12 and higher. [DataExtractionRules]
+    <application android:name=".MousikeApplication" android:allowBackup="false"
+                                                                         ~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/mipmap-anydpi-v26: Warning: This folder configuration (v26) is unnecessary; minSdkVersion is 26. Merge all the resources in this folder into mipmap-anydpi. [ObsoleteSdkInt]
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/AudioPlayerEngine.kt:265: Warning: Do not place Android context classes in static fields (static reference to AudioPlayerEngine which has field context pointing to Context); this is a memory leak [StaticFieldLeak]
+        @Volatile private var instance: AudioPlayerEngine?=null
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/download/DownloadStore.kt:57: Warning: Do not place Android context classes in static fields (static reference to DownloadStore which has field context pointing to Context); this is a memory leak [StaticFieldLeak]
+        @Volatile private var instance: DownloadStore?=null
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/YtDlpExtractor.kt:66: Warning: Do not place Android context classes in static fields (static reference to YtDlpExtractor which has field context pointing to Context); this is a memory leak [StaticFieldLeak]
+        @Volatile private var instance: YtDlpExtractor?=null
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "StaticFieldLeak":
+   A static field will leak contexts.
+
+   Non-static inner classes have an implicit reference to their outer class.
+   If that outer class is for example a Fragment or Activity, then this
+   reference means that the long-running handler/loader/task will hold a
+   reference to the activity which prevents it from getting garbage
+   collected.
+
+   Similarly, direct field references to activities and fragments from these
+   longer running instances can cause leaks.
+
+   ViewModel classes should never point to Views or non-application Contexts.
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/xml/backup_rules.xml:8: Warning: The resource R.xml.backup_rules appears to be unused [UnusedResources]
+<full-backup-content>
+^
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/colors.xml:3: Warning: The resource R.color.purple_200 appears to be unused [UnusedResources]
+    <color name="purple_200">#FFBB86FC</color>
+           ~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/colors.xml:4: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#FF6200EE</color>
+           ~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/colors.xml:5: Warning: The resource R.color.purple_700 appears to be unused [UnusedResources]
+    <color name="purple_700">#FF3700B3</color>
+           ~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/colors.xml:6: Warning: The resource R.color.teal_200 appears to be unused [UnusedResources]
+    <color name="teal_200">#FF03DAC5</color>
+           ~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/colors.xml:7: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/colors.xml:8: Warning: The resource R.color.black appears to be unused [UnusedResources]
+    <color name="black">#FF000000</color>
+           ~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/colors.xml:9: Warning: The resource R.color.white appears to be unused [UnusedResources]
+    <color name="white">#FFFFFFFF</color>
+           ~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/xml/data_extraction_rules.xml:6: Warning: The resource R.xml.data_extraction_rules appears to be unused [UnusedResources]
+<data-extraction-rules>
+^
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/values/strings.xml:2: Warning: The resource R.string.app_name appears to be unused [UnusedResources]
+    <string name="app_name">Mousike</string>
+            ~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/raw/ytdlp: Warning: The resource R.raw.ytdlp appears to be unused [UnusedResources]
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/mipmap-hdpi/ic_launcher.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/mipmap-mdpi/ic_launcher.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/mipmap-xhdpi/ic_launcher.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/mipmap-xxhdpi/ic_launcher.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png: Warning: Launcher icons should not fill every pixel of their square region; see the design guide for details [IconLauncherShape]
+
+   Explanation for issues of type "IconLauncherShape":
+   According to the Android Design Guide
+   (https://d.android.com/r/studio-ui/designer/material/iconography) your
+   launcher icons should "use a distinct silhouette", a "three-dimensional,
+   front view, with a slight perspective as if viewed from above, so that
+   users perceive some depth."
+
+   The unique silhouette implies that your launcher icon should not be a
+   filled square.
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/res/drawable/ic_mousike_logo.jpg: Warning: Found bitmap drawable res/drawable/ic_mousike_logo.jpg in densityless folder [IconLocation]
+
+   Explanation for issues of type "IconLocation":
+   The res/drawable folder is intended for density-independent graphics such
+   as shapes defined in XML. For bitmaps, move it to drawable-mdpi and
+   consider providing higher and lower resolution versions in drawable-ldpi,
+   drawable-hdpi and drawable-xhdpi. If the icon really is density independent
+   (for example a solid color) you can place it in drawable-nodpi.
+
+   https://developer.android.com/guide/practices/screens_support.html
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/settings/AppSettings.kt:52: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+        prefs.edit().putBoolean("onboarded",p.onboarded).putString("name",p.name)
+        ~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/settings/AppSettings.kt:70: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+        if(value.isBlank()) { secrets.edit().clear().apply(); return }
+                              ~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/settings/AppSettings.kt:73: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+        secrets.edit().putString("iv",Base64.encodeToString(cipher.iv,Base64.NO_WRAP))
+        ~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/settings/AppSettings.kt:82: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+    fun clear() { secrets.edit().clear().apply(); prefs.edit().clear().apply(); mutable.value=load() }
+                                                  ~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/AudioPlayerEngine.kt:65: Warning: Use the KTX extension function String.toUri instead? [UseKtx]
+                spec.withUri(android.net.Uri.parse(s.url)).withRequestHeaders(s.headers)
+                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/AudioPlayerEngine.kt:151: Warning: Use the KTX extension function String.toUri instead? [UseKtx]
+            t.streamUrl.isNotBlank() -> android.net.Uri.parse(t.streamUrl)
+                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/AudioPlayerEngine.kt:152: Warning: Use the KTX extension function String.toUri instead? [UseKtx]
+            else -> android.net.Uri.parse("mousike://video/${t.videoId}")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/AudioPlayerEngine.kt:156: Warning: Use the KTX extension function String.toUri instead? [UseKtx]
+                .setArtworkUri(t.coverUrl.takeIf { it.isNotBlank() }?.let { android.net.Uri.parse(it) }).build())
+                                                                            ~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/AudioPlayerEngine.kt:250: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+    fun reset() { player.stop(); player.clearMediaItems(); mutable.value=PlaybackState(); queuePrefs.edit().clear().apply(); tracked=null; setSleepTimer(null) }
+                                                                                          ~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/playback/AudioPlayerEngine.kt:254: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+        queuePrefs.edit().putString("tracks",a.toString()).putInt("index",player.currentMediaItemIndex.coerceAtLeast(0)).putLong("position",player.currentPosition.coerceAtLeast(0)).apply()
+        ~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/download/DownloadStore.kt:28: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+        prefs.edit().putString("entries",a.toString()).apply(); mutable.value=list
+        ~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/download/DownloadStore.kt:54: Warning: Use the KTX extension function SharedPreferences.edit instead? [UseKtx]
+    fun clear() { mutable.value.forEach { e -> cancel(e.track); if(e.path.isNotBlank()) File(e.path).delete() }; prefs.edit().clear().apply(); mutable.value=emptyList() }
+                                                                                                                 ~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/src/main/java/com/example/ui/screens/SettingsScreen.kt:83: Warning: Use the KTX extension function String.toUri instead? [UseKtx]
+                TextButton(onClick={context.startActivity(Intent(Intent.ACTION_VIEW,Uri.parse("https://aistudio.google.com/apikey")))}) { Text("Get a key from Google AI Studio") }
+                                                                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseKtx":
+   The Android KTX libraries decorates the Android platform SDK as well as
+   various libraries with more convenient extension functions available from
+   Kotlin, allowing you to use default parameters, named parameters, and
+   more.
+
+   Available options:
+
+   **remove-defaults** (default is true):
+   Whether to skip arguments that match the defaults provided by the extension.
+
+   Extensions often provide default values for some of the parameters. For example:
+   ```kotlin
+   fun Path.readLines(charset: Charset = Charsets.UTF_8): List<String> { return Files.readAllLines(this, charset) }
+   ```
+   This lint check will by default automatically omit parameters that match the default, so if your code was calling
+
+   ```kotlin
+   Files.readAllLines(file, Charset.UTF_8)
+   ```
+   lint would replace this with
+   ```kotlin
+   file.readLines()
+   ```
+   rather than
+
+   ```kotlin
+   file.readLines(Charset.UTF_8
+   ```
+   You can turn this behavior off using this option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UseKtx">
+           <option name="remove-defaults" value="true" />
+       </issue>
+   </lint>
+   ```
+
+   **require-present** (default is true):
+   Whether to only offer extensions already available.
+
+   This option lets you only have lint suggest extension replacements if those extensions are already available on the class path (in other words, you're already depending on the library containing the extension method.)
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UseKtx">
+           <option name="require-present" value="true" />
+       </issue>
+   </lint>
+   ```
+
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:36: Warning: Use version catalog instead (androidx.compose:compose-bom is already available as androidx-compose-bom, but using version 2024.09.00 instead) [UseTomlInstead]
+    implementation(platform("androidx.compose:compose-bom:2025.04.01"))
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:37: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.material3:material3")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:38: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.material:material-icons-extended")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:39: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.ui:ui")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:40: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.compose.ui:ui-tooling-preview")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:41: Warning: Use the existing version catalog reference (libs.androidx.activity.compose) instead [UseTomlInstead]
+    implementation("androidx.activity:activity-compose:1.10.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:42: Warning: Use version catalog instead (androidx.core:core-ktx is already available as androidx-core-ktx, but using version 1.18.0 instead) [UseTomlInstead]
+    implementation("androidx.core:core-ktx:1.16.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:43: Warning: Use the existing version catalog reference (libs.androidx.lifecycle.runtime.compose) instead [UseTomlInstead]
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:44: Warning: Use the existing version catalog reference (libs.androidx.lifecycle.viewmodel.compose) instead [UseTomlInstead]
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.7")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:45: Warning: Use version catalog instead (androidx.room:room-runtime is already available as androidx-room-runtime, but using version 2.7.0 instead) [UseTomlInstead]
+    implementation("androidx.room:room-runtime:2.7.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:46: Warning: Use version catalog instead (androidx.room:room-ktx is already available as androidx-room-ktx, but using version 2.7.0 instead) [UseTomlInstead]
+    implementation("androidx.room:room-ktx:2.7.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:47: Warning: Use version catalog instead (androidx.room:room-compiler is already available as androidx-room-compiler, but using version 2.7.0 instead) [UseTomlInstead]
+    ksp("androidx.room:room-compiler:2.7.1")
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:48: Warning: Use the existing version catalog reference (libs.coil.compose) instead [UseTomlInstead]
+    implementation("io.coil-kt:coil-compose:2.7.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:49: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.palette:palette-ktx:1.0.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:50: Warning: Use version catalog instead (com.squareup.okhttp3:okhttp is already available as okhttp, but using version 4.10.0 instead) [UseTomlInstead]
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:51: Warning: Use the existing version catalog reference (libs.kotlinx.coroutines.android) instead [UseTomlInstead]
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:52: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.media3:media3-exoplayer:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:53: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.media3:media3-exoplayer-hls:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:54: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.media3:media3-session:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:55: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.media3:media3-datasource-okhttp:1.6.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:56: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("androidx.work:work-runtime-ktx:2.10.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:57: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("io.github.junkfood02.youtubedl-android:library:0.18.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:58: Warning: Use version catalog instead [UseTomlInstead]
+    implementation("io.github.junkfood02.youtubedl-android:ffmpeg:0.18.1")
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:59: Warning: Use the existing version catalog reference (libs.junit) instead [UseTomlInstead]
+    testImplementation("junit:junit:4.13.2")
+                       ~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:60: Warning: Use version catalog instead [UseTomlInstead]
+    testImplementation("org.json:json:20240303")
+                       ~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:61: Warning: Use version catalog instead (org.robolectric:robolectric is already available as robolectric, but using version 4.16.1 instead) [UseTomlInstead]
+    testImplementation("org.robolectric:robolectric:4.14.1")
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:62: Warning: Use the existing version catalog reference (libs.androidx.core) instead [UseTomlInstead]
+    testImplementation("androidx.test:core:1.6.1")
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:63: Warning: Use the existing version catalog reference (libs.kotlinx.coroutines.test) instead [UseTomlInstead]
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.10.2")
+                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:64: Warning: Use version catalog instead (androidx.compose:compose-bom is already available as androidx-compose-bom, but using version 2024.09.00 instead) [UseTomlInstead]
+    androidTestImplementation(platform("androidx.compose:compose-bom:2025.04.01"))
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:65: Warning: Use version catalog instead [UseTomlInstead]
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:66: Warning: Use version catalog instead (androidx.test.ext:junit is already available as androidx-junit, but using version 1.3.0 instead) [UseTomlInstead]
+    androidTestImplementation("androidx.test.ext:junit:1.2.1")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:67: Warning: Use the existing version catalog reference (libs.androidx.runner) instead [UseTomlInstead]
+    androidTestImplementation("androidx.test:runner:1.6.2")
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:68: Warning: Use version catalog instead [UseTomlInstead]
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/workspace/scratch/8c324a8f6244/MousikeNative/app/build.gradle.kts:69: Warning: Use version catalog instead [UseTomlInstead]
+    debugImplementation("androidx.compose.ui:ui-tooling")
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseTomlInstead":
+   If your project is using a libs.versions.toml file, you should place all
+   Gradle dependencies in the TOML file. This lint check looks for version
+   declarations outside of the TOML file and suggests moving them (and in the
+   IDE, provides a quickfix to performing the operation automatically).
+
+0 errors, 90 warnings

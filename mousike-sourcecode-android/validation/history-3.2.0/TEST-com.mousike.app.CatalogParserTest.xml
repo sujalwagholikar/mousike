@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.CatalogParserTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-10-26T03:40:07.823Z" hostname="8dea5f7111fa" time="0.173">
+  <properties/>
+  <testcase name="fixedColumnDuration" classname="com.mousike.app.CatalogParserTest" time="0.127"/>
+  <testcase name="realCatalogResponseContainsPlayableMusic" classname="com.mousike.app.CatalogParserTest" time="0.042"/>
+  <testcase name="emptyRenderer" classname="com.mousike.app.CatalogParserTest" time="0.001"/>
+  <testcase name="albumOverlayDoesNotTurnAlbumIntoVideo" classname="com.mousike.app.CatalogParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

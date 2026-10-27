@@ -1,0 +1,5 @@
+downloads/*.exe
+downloads/*.apk
+**/node_modules/
+**/dist/
+**/.dev/

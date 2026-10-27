@@ -1,0 +1,6 @@
+'use strict';
+const {contextBridge,ipcRenderer}=require('electron');
+const call=(method,...args)=>ipcRenderer.invoke('mousike:call',method,args);
+contextBridge.exposeInMainWorld('mousike',{
+ state:()=>call('state'),feed:()=>call('feed'),refresh:()=>call('refresh'),search:(q,f)=>call('search',q,f),album:id=>call('album',id),artist:id=>call('artist',id),mix:id=>call('mix',id),inspect:(id,text)=>call('inspect',id,text),resolve:(id,q,mode)=>call('resolve',id,q,mode),prepare:(id,q)=>call('prepare',id,q),cancelResolve:()=>call('cancelResolve'),bytes:key=>call('bytes',key),related:id=>call('related',id),lyrics:id=>call('lyrics',id),action:(name,p)=>call('action',name,p),prefs:p=>call('prefs',p),key:(value)=>call('key',value),validateAI:()=>call('validateAI'),download:id=>call('download',id),cancelDownload:id=>call('cancelDownload',id),removeDownload:id=>call('removeDownload',id),revealDownload:id=>call('revealDownload',id),backup:()=>call('backup'),restore:()=>call('restore'),demo:()=>call('demo'),open:url=>call('open',url),copy:text=>call('copy',text),desktop:p=>call('desktop',p),quit:()=>call('quit'),onEvent:callback=>{const handler=(_event,name,data)=>callback(name,data);ipcRenderer.on('mousike:event',handler);return ()=>ipcRenderer.removeListener('mousike:event',handler);}
+});

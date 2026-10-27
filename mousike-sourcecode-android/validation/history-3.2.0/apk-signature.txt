@@ -1,0 +1,17 @@
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): true
+Verified using v3 scheme (APK Signature Scheme v3): false
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+Signer #1 certificate DN: CN=Mousike Development, O=Mousike, C=IN
+Signer #1 certificate SHA-256 digest: 7090ce85e42cea840a7b11dbaead24ea10e52cb1bf29bdc1fce89dd097260b82
+Signer #1 certificate SHA-1 digest: 4cbb61e05f33c35e6e66b9a704d2a77706bb4e9d
+Signer #1 certificate MD5 digest: f8a6ba5451c26441b39a55440b5df8aa
+Signer #1 key algorithm: RSA
+Signer #1 key size (bits): 2048
+Signer #1 public key SHA-256 digest: e2b299384c91178be8c9d3566ff1bfe861c7bf84778d852a06459fe7cfedfaa3
+Signer #1 public key SHA-1 digest: a90d81dff5277cf48f1c07563ee9bd64ce23b05f
+Signer #1 public key MD5 digest: 649657eaf0c94ec5c133795398032b1b

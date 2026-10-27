@@ -1,0 +1,1 @@
+{"code": -1, "error": "Command '['/workspace/scratch/8c324a8f6244/.build-tools/sdk/platform-tools/adb', 'shell', 'am', 'instrument', '-w', '-r', '-e', 'class', 'com.mousike.app.StartupSpeedTest', 'com.mousike.app.fast.test/androidx.test.runner.AndroidJUnitRunner']' timed out after 180 seconds"}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.PersistenceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-10-26T05:41:54.381Z" hostname="8dea5f7111fa" time="5.158">
+  <properties/>
+  <testcase name="chapterCatalogColdLoad" classname="com.mousike.app.PersistenceTest" time="2.717"/>
+  <testcase name="backupRestoresLikedChapterAndPlaylist" classname="com.mousike.app.PersistenceTest" time="2.441"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

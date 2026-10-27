@@ -1,0 +1,10 @@
+{
+  "version": "3.5.0",
+  "unit_tests": 86,
+  "android_ui_tests_passed": 3,
+  "spotlight_full_flow": "not verified; further tests stopped at user request",
+  "runtime_files_unchanged": 91,
+  "backend_viewmodel_hashes_unchanged": 34,
+  "bytes": 83790798,
+  "sha256": "17464f74d957aec465fd0c9f7a60f37fb925ead1f69c0bb0a5e18a6588da02b2"
+}

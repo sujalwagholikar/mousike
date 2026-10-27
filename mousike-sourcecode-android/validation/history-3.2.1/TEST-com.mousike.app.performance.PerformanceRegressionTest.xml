@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.PerformanceRegressionTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-10-26T04:13:34.281Z" hostname="8dea5f7111fa" time="0.346">
+  <properties/>
+  <testcase name="diskMetadataAvoidsSecondNetworkRequestAndDropsSignedUrls" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.174"/>
+  <testcase name="expirationAndQualityKeysAreIndependent" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.005"/>
+  <testcase name="lightweightPageBuildsAlbumWithoutMediaExtraction" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.0"/>
+  <testcase name="warmCacheDoesNotRepeatWork" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.004"/>
+  <testcase name="malformedOrWrongVideoPageIsRejected" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.0"/>
+  <testcase name="inFlightEntrySurvivesEviction" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.004"/>
+  <testcase name="failedWorkIsRetryable" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.001"/>
+  <testcase name="concurrentRequestsShareOneExtraction" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.155"/>
+  <testcase name="parserSkipsMisleadingMarker" classname="com.mousike.app.performance.PerformanceRegressionTest" time="0.0"/>
+  <system-out><![CDATA[METADATA_CONTROLLED_COLD_MS=158;DISK_HIT_MS=0;NETWORK_REQUESTS=1
+WARM_1000_CACHE_LOOKUPS_MS=1
+COALESCED_8_REQUESTS_MS=153;EXTRACTIONS=1
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,1 @@
+const esbuild=require('esbuild');esbuild.buildSync({entryPoints:['src/renderer/app.js'],bundle:true,outfile:'src/renderer/app.bundle.js',format:'iife',target:'chrome145',minify:true,legalComments:'eof'});

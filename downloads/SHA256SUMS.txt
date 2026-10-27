@@ -1,0 +1,2 @@
+88b510f4e1a4200f95662213feda8232a4f0ce6e89463ecead3166bd4ebb3bb7  Mousike-3.5.1-arm64.apk
+f0e88298bef87f9680746130d3a88d4e5ee886ae927bd8ceb37a0d9c86ff47e6  Mousike-3.6.0-Windows-x64-Setup.exe

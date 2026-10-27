@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.Startup33Test" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-26T05:02:13.225Z" hostname="8dea5f7111fa" time="2.229">
+  <properties/>
+  <testcase name="transformedDirectUrlNeverOverridesPlayableHls" classname="com.mousike.app.performance.Startup33Test" time="1.208"/>
+  <testcase name="cancellingOldSearchCancelsItsHttpCall" classname="com.mousike.app.performance.Startup33Test" time="0.105"/>
+  <testcase name="autoRefreshLeavesPlatformInControl" classname="com.mousike.app.performance.Startup33Test" time="0.034"/>
+  <testcase name="preparedNativeConnectionIsReusedWithoutAnotherPlayerRequest" classname="com.mousike.app.performance.Startup33Test" time="0.762"/>
+  <testcase name="refreshRateNeverInventsUnsupportedMode" classname="com.mousike.app.performance.Startup33Test" time="0.045"/>
+  <testcase name="directAudioAvoidsManifestRoundTripsAndRetainsHlsRecovery" classname="com.mousike.app.performance.Startup33Test" time="0.036"/>
+  <testcase name="differentAudioFormatsUseSeparateByteCaches" classname="com.mousike.app.performance.Startup33Test" time="0.039"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

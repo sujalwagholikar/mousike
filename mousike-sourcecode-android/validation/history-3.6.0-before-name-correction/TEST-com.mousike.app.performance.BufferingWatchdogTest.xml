@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.BufferingWatchdogTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-10-26T12:13:44.091Z" hostname="b2d680d24969" time="0.002">
+  <properties/>
+  <testcase name="endlessTrickleCannotKeepTheSpinnerAliveForever" classname="com.mousike.app.performance.BufferingWatchdogTest" time="0.001"/>
+  <testcase name="stuckAfterFirstSoundRearmsWithoutAnotherButtonTap" classname="com.mousike.app.performance.BufferingWatchdogTest" time="0.0"/>
+  <testcase name="sourceRetryDoesNotRestartTheOverallDeadline" classname="com.mousike.app.performance.BufferingWatchdogTest" time="0.0"/>
+  <testcase name="nextSongGetsItsOwnDeadlineAndPlaybackClearsIt" classname="com.mousike.app.performance.BufferingWatchdogTest" time="0.0"/>
+  <testcase name="briefReadyToBufferingEventStillHasContinuousRecovery" classname="com.mousike.app.performance.BufferingWatchdogTest" time="0.0"/>
+  <testcase name="pauseAndAudioFocusSuppressionAreNeverMislabelledAsBufferStalls" classname="com.mousike.app.performance.BufferingWatchdogTest" time="0.0"/>
+  <testcase name="growingMp4IndexDoesNotTriggerFalseStallAtZeroBufferedPosition" classname="com.mousike.app.performance.BufferingWatchdogTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

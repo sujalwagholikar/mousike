@@ -1,0 +1,26 @@
+[
+  {
+    "base": "https://youtubei.googleapis.com/youtubei/v1/",
+    "visitor": true,
+    "playability": {
+      "status": "LOGIN_REQUIRED",
+      "reason": "Sign in to confirm you\u2019re not a bot"
+    },
+    "videoId": null,
+    "hls": false,
+    "formats": 0,
+    "seconds": 15.8
+  },
+  {
+    "base": "https://www.youtube.com/youtubei/v1/",
+    "visitor": true,
+    "playability": {
+      "status": "OK",
+      "playableInEmbed": true
+    },
+    "videoId": "EqkBRVukQmE",
+    "hls": true,
+    "formats": 17,
+    "seconds": 8.37
+  }
+]

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.settings.QualityAndMusicPreferenceTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2026-10-26T12:14:07.656Z" hostname="b2d680d24969" time="0.031">
+  <properties/>
+  <testcase name="qualityNeverRejectsTheOnlyWorkingAudio" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.001"/>
+  <testcase name="missingProgressiveAudioPreservesHlsFallback" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.0"/>
+  <testcase name="lowCanUseAnEfficientWebmWhenAacExceedsTheTarget" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.0"/>
+  <testcase name="albumParserKeepsTheOriginalTrackSequence" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.028"/>
+  <testcase name="oldDataSaverRetainsLowPolicy" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.0"/>
+  <testcase name="prefersMusicRecordingsWhileKeepingSongIdentityAndRelativeTasteOrder" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.001"/>
+  <testcase name="threeChoicesSelectThreeAvailableSources" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.0"/>
+  <testcase name="musicMetadataSurvivesBackupAndOlderBackupsStillLoad" classname="com.mousike.app.settings.QualityAndMusicPreferenceTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.OneTapRecoveryTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-10-26T04:13:34.004Z" hostname="8dea5f7111fa" time="0.271">
+  <properties/>
+  <testcase name="visitorSessionIsEstablishedAndSentBeforePlayerRequest" classname="com.mousike.app.performance.OneTapRecoveryTest" time="0.073"/>
+  <testcase name="failedPrimaryStartsRecoveryWithoutAnotherUserTapOrDelay" classname="com.mousike.app.performance.OneTapRecoveryTest" time="0.005"/>
+  <testcase name="nativeSuccessDoesNotStartCompatibilityRuntime" classname="com.mousike.app.performance.OneTapRecoveryTest" time="0.041"/>
+  <testcase name="overallDeadlineStopsBothRoutes" classname="com.mousike.app.performance.OneTapRecoveryTest" time="0.102"/>
+  <testcase name="warmVisitorSessionNeedsOnlyOnePlayerRequest" classname="com.mousike.app.performance.OneTapRecoveryTest" time="0.017"/>
+  <testcase name="winnerCancelsOtherRoute" classname="com.mousike.app.performance.OneTapRecoveryTest" time="0.032"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

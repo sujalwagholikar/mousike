@@ -1,0 +1,8 @@
+{
+  "video": "EqkBRVukQmE",
+  "master_status": 200,
+  "master_type": "text/html",
+  "master_bytes": 195,
+  "error": "Manifest is not HLS: <html>\n    <head><title>Site Unavailable</title></head>\n    <body>\n      <center",
+  "seconds": 8.14
+}

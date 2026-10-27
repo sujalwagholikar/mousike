@@ -1,0 +1,497 @@
+{
+  "compared_to": "Mousike 3.4.1",
+  "runtime_files": [
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "sha256": "2d04e60857c267e5c4c776cab1fb9fda0e57b744cb8285bb5ac22cd9780bcba0",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/demo/soundcheck-0.wav",
+      "sha256": "871a5f3a2af4ee03c3ccfedb3491dd363b1aa7475ba2258a925d55c330b74e32",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/demo/soundcheck-1.wav",
+      "sha256": "4feb4175508c1fc7784fa94002f3028edb8139b45dd3728b8a1d5e0f2d31ec59",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/demo/soundcheck-2.wav",
+      "sha256": "c52e6fe970e92551d7199d86068275db50f72be799c0e13d59f62757d55feb10",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/font-licenses/inter-OFL.txt",
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/font-licenses/manrope-OFL.txt",
+      "sha256": "58172e0c0fac2cda8a37b348164bb55e44b0e69051e557e92b1d3f6910141f7b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/font-licenses/roboto-OFL.txt",
+      "sha256": "061402327a96aadb0bfb694a960ed289ecd38d383e396243831ab81feb109c41",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/mousike-logo-filled.svg",
+      "sha256": "442b02a90ab9293482bd67476708fc29806e103097cb6e89653fcb6d3c7ec590",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/mousike-logo.svg",
+      "sha256": "184ba0fd7ec2b31dd52d343de440faba43eb5ae0a102c03e8bec8409165f94f6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/playback-check/audio.m3u8",
+      "sha256": "b59e4126811f2c67afa8d707e18665cf463dfc183927d9550650ad713a6d6bef",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/playback-check/part-0.ts",
+      "sha256": "0753883c2a520609b01b129e386f1634bfe15e6564ef153f4e843a71eb31795b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/playback-check/part-1.ts",
+      "sha256": "60c8db3499bbe438dd43afac519d66632614825cddd445d06970fe83e540dd11",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/playback-check/part-2.ts",
+      "sha256": "49aa8a603efc35bf19a75b47190031c1f6187ffcb5a2fb72224721c7b8e7c650",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/assets/playback-check/part-3.ts",
+      "sha256": "ed00f3d3ed591ec1c5c51139ca82e83237d5c83dab665d36b542dd85c71a9e35",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/MousikeApplication.kt",
+      "sha256": "197169967f5feb916a193036f6b6e4fa441ea2963bf67e21ef5dd236d3a297f4",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/RuntimeMode.kt",
+      "sha256": "b5e822ecb56e32c6ab2f4f93995f46d4b59dbbf2c0d37a337a419163d6d74d93",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/album/AlbumDetector.kt",
+      "sha256": "d7c27c3118e2c2527ac1a811dc03ffa293cd31d9ae399d80bdede530848cdf1d",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/catalog/CatalogCache.kt",
+      "sha256": "5de58096b7a75beae70f81bbcb13d1e8aba0e09d18d183e21312ca03e53e6369",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/catalog/DemoCatalog.kt",
+      "sha256": "e7795cff76fd1a125f89c1f15a03fbc48adf74164d85ad2c3a13197b4c5d446b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/catalog/MusicCatalog.kt",
+      "sha256": "fbd101268e5568d15ad49e314f93f369aa9a0a933e344a1cd0938659beb7d58b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/local/Entities.kt",
+      "sha256": "73cd88daeb88abbb7dfd5c72e2afa043f84b533eaa4d6234d86544f6bd32dfa3",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/local/MousikeDao.kt",
+      "sha256": "0b6da814a7a18e389109ed157efa61bb9ed42310c5892e8854f32959b9f1a0de",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/local/MousikeDatabase.kt",
+      "sha256": "912d6bdb7570984e7e06590e3f7136d35e5c5b77cce6bf9c71e7d47935123d27",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/model/Models.kt",
+      "sha256": "745ba94c93c8eb991fec18ec5d51fdc077430ca6e9ebc7c9b8a62f96dbb4305e",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/model/TrackCodec.kt",
+      "sha256": "d506500e15fc65953349fd3151ef8982e5b2ba7b4e3db27199a0893fa9aac754",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/remote/LyricsClient.kt",
+      "sha256": "f9f4a93a6f5cec17cb92899991067aee376314dfbfb181ff030ddfdaac91af3b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/remote/YouTubeMusicClient.kt",
+      "sha256": "f9a665307284ab30b7d0c5ec40bcca1d4fdc3eac5113f6c1ceb4a15c73b9300d",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/data/repository/MusicRepository.kt",
+      "sha256": "3cb2a818a302f9c44fbf077feaa0da84191cb7ca554be2898fb46e4f1373788a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/download/DownloadStore.kt",
+      "sha256": "c68a13d98b430e3de623dc64137f18b39784c31e23d1935914993a0ded272ada",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/download/MusicDownloadWorker.kt",
+      "sha256": "5e1e3dcd23d573cd550e15e2f5d2f1d1049f354d38a08136a31ffed09fb848e2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/performance/ConnectionWork.kt",
+      "sha256": "5efa7ea64c5af3d97cc84b0bd8d758be83314a78a982949de5fcdff60c65f4b3",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/performance/FastMetadata.kt",
+      "sha256": "362b2475fd8157a588315b19693f6b714f515c34ec28b84f895c25cf0f7cf486",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/performance/ForegroundResolver.kt",
+      "sha256": "6892a85d7eae919a04001a7547b9e5172f20abe0d54c1b8e46019f4a8c28d842",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/performance/PlaybackProgress.kt",
+      "sha256": "fc142a7bda44ec27fee1440bd9c13b62d93da9e9d9ba8e29be599331b8d09f04",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/performance/ResolutionSignal.kt",
+      "sha256": "09137e1ba07cac684acfd30750b5b7635a05e6ba1a47047abe38f1d2936ac28d",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/performance/SingleFlightCache.kt",
+      "sha256": "28ec13a2fab8e78ae2647b77ae4381c9c45bc8fb9a4d6e37136c100f2461235c",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/AudioCache.kt",
+      "sha256": "277e2406e50b3071053ecb03dded02d4b1d1b0b349cb7c4a10169ce2ab936486",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/AudioNetwork.kt",
+      "sha256": "82db6a7835178d515010f4a9aa04c40dfd61a3644d0543defe53de0dd5860f9c",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/AudioPlayerEngine.kt",
+      "sha256": "f3f2b3e098b3f89e22efe32520c0eb25b735242a0de4cc7fff6d9015d8ed5953",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/NativeAudioResolver.kt",
+      "sha256": "c14d346dc350fec74c9eb409186192d8c2fe443f798b57caa96f8f652ede828a",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/PlaybackDiagnostics.kt",
+      "sha256": "afb4371c8a0fbef9fa7da6ee272996d158eea1c7e6d27d8768a5aea050e7e3d6",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/PlaybackService.kt",
+      "sha256": "081b2c5ffcd66e071c0f96d8b046ea1c1a9cf06e67a0c00869d4ebb760031bba",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/ResumingAudioDataSource.kt",
+      "sha256": "b455d229a80c802007581f242d2e41b25e1d56faf437ba75175fcb242b8e2f1b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/StreamVerifier.kt",
+      "sha256": "176f8ed10894f55e260cf7ba74af531976d1d4bc2d113991e708ad0b69056373",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/StreamingMediaSource.kt",
+      "sha256": "c7cc8609e1092f943d02fdda361eb2edf48fe41461342e9c12ebdf0eeef6d9e9",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/VisitorSession.kt",
+      "sha256": "51e18b4f8193790950e0999a1c52aa668845a49222849ecaa296cbef38f0cccf",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/playback/YtDlpExtractor.kt",
+      "sha256": "a7e86623bfab82171ba309603168760303c14270e4a5440257cf3812ccb2a592",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/recommendation/GeminiRecommender.kt",
+      "sha256": "353f75aa0d817138c0b15f70d64fb0bc540ea54535d06415cc1ce66d4d976e22",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/recommendation/TasteRanker.kt",
+      "sha256": "6db12a7b44721df0d554a9954853f2a11a10c9c3eff8253009946cebc5ba5448",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/java/com/mousike/app/settings/AppSettings.kt",
+      "sha256": "0765137337e1805fa8ee96405465a7285d31321e83cc41b444fd1490f33279b2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/jniLibs/arm64-v8a/libc++_shared.so",
+      "sha256": "f9992c4ba6b7c5a716e3a202fceb1ce029d6a2b0605838ac6b3219f489dd7970",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/jniLibs/x86_64/libc++_shared.so",
+      "sha256": "cd110349c4a6d0a3efb4aee6beb1a621e243d2a9bc5566c96fbe0c38c9ca9d39",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable/cover_dawn.xml",
+      "sha256": "b36e07cfab7dd8ccdd6c15c22adc3f65df99a465b29a19a75ea37b62897df8e7",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable/cover_dusk.xml",
+      "sha256": "2db086842e6c757499437bac8f95766b3698798245205f437e27ccbac831fcc2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable/cover_orbit.xml",
+      "sha256": "8daecd9cbf5abfb859be215d9eb6cfea982c4d8c8b95afae98c8257dcaefccc4",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_background.xml",
+      "sha256": "d2a28c88f7500982b01f386d1640a5f20fdecaee3d9e766b28934bda6d698e8c",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "sha256": "3096e4f9a4706a7b674139b89c1c0e083f59f6e8bb5a0b18939905e9dfd48722",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_mousike_logo.jpg",
+      "sha256": "f8c0ce425d0f7c843ddda0a42d1ca1b34cb5560872f0ccca7fdc5379d84b6eb9",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_music_note.xml",
+      "sha256": "bfc1c1891759b9225acdb1679c90c377be1512d773a5f625a53670bb208710ee",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/developer_sujal.jpg",
+      "sha256": "fa8ff685b3fb09033031e908e3ca270a3652b8f856293ca69f98d9c8eb345fee",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/mousike_launcher.png",
+      "sha256": "e63f2d86998157f70cf616ad8239fcc9fe2b4049b6b11f647cb9dd7b64bc211d",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/drawable-nodpi/mousike_logo.png",
+      "sha256": "67062b0ae97df0df51b83e27abfb82131e95b0b2135509ade0c8e65dace9dc41",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/inter_bold.ttf",
+      "sha256": "5c0774d1a07febbf0366d66106cfcf6d5bfac2561099d98f081d531cd43a0483",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/inter_medium.ttf",
+      "sha256": "4d960915998e6616e04d8d8d97144472c6c96c8679bd1d1e84d2aa2126045cda",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/inter_regular.ttf",
+      "sha256": "7e28c9aa8923b84faa96f234d15d6842747210be12e15b81fd625d00f1a98748",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/inter_semibold.ttf",
+      "sha256": "a6d1024713a2fe5fe9c673b1acca1046bb81fe7a04acd8e5a89ab27dafc13b7f",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/manrope_bold.ttf",
+      "sha256": "81dff8b0dbcd0169a4c6100123c30a9b59927de65e3ae985debc7cfa250e7e31",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/manrope_extrabold.ttf",
+      "sha256": "6058a209ea835f3d00b0f74a88f9e2470bbe0ba16152617c6d3aa5e0714261d2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/manrope_regular.ttf",
+      "sha256": "81250bd3daec81b83d765eda398588d9df2eaf1f284e2d602bb058cc12232014",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/manrope_semibold.ttf",
+      "sha256": "ce6e23a837819e28edfd11477d2aa6a8c6426ba76a8ddcc3f664e8282612ef79",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/roboto_bold.ttf",
+      "sha256": "181c3a9b5a5b9ada4c8e4aa1165d1a29297effb99cbdce6bccf5623b479ba783",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/roboto_medium.ttf",
+      "sha256": "681abcb7fbd6331afec8cc6bed28e0c37685cb3037d73aaced96539e8027846b",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/font/roboto_regular.ttf",
+      "sha256": "bbc913b30b5e6c20ff5390cae158249c28d7058d5b3f6aa81a124a591c7f7613",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml",
+      "sha256": "707913a0a6683bfef098ce4a27c7a27632a145433962e3ec947ef3a9c3003078",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "sha256": "707913a0a6683bfef098ce4a27c7a27632a145433962e3ec947ef3a9c3003078",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher.png",
+      "sha256": "ce6e86694a01a110789a32e46f7641399c85a884f5df0947eb6a15da6470edd2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-hdpi/ic_launcher_round.png",
+      "sha256": "ce6e86694a01a110789a32e46f7641399c85a884f5df0947eb6a15da6470edd2",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher.png",
+      "sha256": "0261b8a6733a93c1053f80e26d1ca98f4a5f1e76138189a0b5f5a02254ea9448",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-mdpi/ic_launcher_round.png",
+      "sha256": "0261b8a6733a93c1053f80e26d1ca98f4a5f1e76138189a0b5f5a02254ea9448",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher.png",
+      "sha256": "e8d34b98c098288a99d241d334b05ba0585a54a168a50e80e2a4498d03d3e244",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-xhdpi/ic_launcher_round.png",
+      "sha256": "e8d34b98c098288a99d241d334b05ba0585a54a168a50e80e2a4498d03d3e244",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher.png",
+      "sha256": "3bdebce4ab666c9d91414553f5bc02f4559a9d2e6c452d1ded3e0b0fa3812ed5",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png",
+      "sha256": "3bdebce4ab666c9d91414553f5bc02f4559a9d2e6c452d1ded3e0b0fa3812ed5",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher.png",
+      "sha256": "86765eea071ec2beb62e7a559d46e0f194d1dc8d299e043fad1be31f295c9c08",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png",
+      "sha256": "86765eea071ec2beb62e7a559d46e0f194d1dc8d299e043fad1be31f295c9c08",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/raw/ytdlp",
+      "sha256": "b7af77f686e95f7845ce8d09d21957718febb8b48b30555adb9dd2292ad7bf14",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/colors.xml",
+      "sha256": "57681038afd005dcd260eabdd6d16619709c4a3fe20324362ea00e093e85b5fd",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "sha256": "238a6cd8ddc05c4b74d6abfed19a8f59ad5b4983d3a99243115209005f39a7a3",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/values/themes.xml",
+      "sha256": "e8288b65767f4f28854d168c7b19c308579d3703bdf3fc26c2b266e19148f465",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/xml/backup_rules.xml",
+      "sha256": "173c90cbeb773e6a65b430581a85720dc5c7ddba17d543cfefe3d2aed9b9a7a4",
+      "unchanged": true
+    },
+    {
+      "path": "app/src/main/res/xml/data_extraction_rules.xml",
+      "sha256": "30ae995624fd57d839bf0d638900f8d2c17c703d6e7d6c8640708a8a7cac2402",
+      "unchanged": true
+    }
+  ],
+  "locked_backend_viewmodel_files": {
+    "app/src/main/java/com/mousike/app/playback/AudioCache.kt": "277e2406e50b3071053ecb03dded02d4b1d1b0b349cb7c4a10169ce2ab936486",
+    "app/src/main/java/com/mousike/app/playback/AudioPlayerEngine.kt": "f3f2b3e098b3f89e22efe32520c0eb25b735242a0de4cc7fff6d9015d8ed5953",
+    "app/src/main/java/com/mousike/app/playback/VisitorSession.kt": "51e18b4f8193790950e0999a1c52aa668845a49222849ecaa296cbef38f0cccf",
+    "app/src/main/java/com/mousike/app/playback/PlaybackDiagnostics.kt": "afb4371c8a0fbef9fa7da6ee272996d158eea1c7e6d27d8768a5aea050e7e3d6",
+    "app/src/main/java/com/mousike/app/playback/PlaybackService.kt": "081b2c5ffcd66e071c0f96d8b046ea1c1a9cf06e67a0c00869d4ebb760031bba",
+    "app/src/main/java/com/mousike/app/playback/AudioNetwork.kt": "82db6a7835178d515010f4a9aa04c40dfd61a3644d0543defe53de0dd5860f9c",
+    "app/src/main/java/com/mousike/app/playback/ResumingAudioDataSource.kt": "b455d229a80c802007581f242d2e41b25e1d56faf437ba75175fcb242b8e2f1b",
+    "app/src/main/java/com/mousike/app/playback/NativeAudioResolver.kt": "c14d346dc350fec74c9eb409186192d8c2fe443f798b57caa96f8f652ede828a",
+    "app/src/main/java/com/mousike/app/playback/YtDlpExtractor.kt": "a7e86623bfab82171ba309603168760303c14270e4a5440257cf3812ccb2a592",
+    "app/src/main/java/com/mousike/app/playback/StreamingMediaSource.kt": "c7cc8609e1092f943d02fdda361eb2edf48fe41461342e9c12ebdf0eeef6d9e9",
+    "app/src/main/java/com/mousike/app/playback/StreamVerifier.kt": "176f8ed10894f55e260cf7ba74af531976d1d4bc2d113991e708ad0b69056373",
+    "app/src/main/java/com/mousike/app/performance/FastMetadata.kt": "362b2475fd8157a588315b19693f6b714f515c34ec28b84f895c25cf0f7cf486",
+    "app/src/main/java/com/mousike/app/performance/ConnectionWork.kt": "5efa7ea64c5af3d97cc84b0bd8d758be83314a78a982949de5fcdff60c65f4b3",
+    "app/src/main/java/com/mousike/app/performance/ResolutionSignal.kt": "09137e1ba07cac684acfd30750b5b7635a05e6ba1a47047abe38f1d2936ac28d",
+    "app/src/main/java/com/mousike/app/performance/PlaybackProgress.kt": "fc142a7bda44ec27fee1440bd9c13b62d93da9e9d9ba8e29be599331b8d09f04",
+    "app/src/main/java/com/mousike/app/performance/ForegroundResolver.kt": "6892a85d7eae919a04001a7547b9e5172f20abe0d54c1b8e46019f4a8c28d842",
+    "app/src/main/java/com/mousike/app/performance/SingleFlightCache.kt": "28ec13a2fab8e78ae2647b77ae4381c9c45bc8fb9a4d6e37136c100f2461235c",
+    "app/src/main/java/com/mousike/app/data/catalog/CatalogCache.kt": "5de58096b7a75beae70f81bbcb13d1e8aba0e09d18d183e21312ca03e53e6369",
+    "app/src/main/java/com/mousike/app/data/catalog/MusicCatalog.kt": "fbd101268e5568d15ad49e314f93f369aa9a0a933e344a1cd0938659beb7d58b",
+    "app/src/main/java/com/mousike/app/data/catalog/DemoCatalog.kt": "e7795cff76fd1a125f89c1f15a03fbc48adf74164d85ad2c3a13197b4c5d446b",
+    "app/src/main/java/com/mousike/app/data/remote/YouTubeMusicClient.kt": "f9a665307284ab30b7d0c5ec40bcca1d4fdc3eac5113f6c1ceb4a15c73b9300d",
+    "app/src/main/java/com/mousike/app/data/remote/LyricsClient.kt": "f9f4a93a6f5cec17cb92899991067aee376314dfbfb181ff030ddfdaac91af3b",
+    "app/src/main/java/com/mousike/app/data/model/TrackCodec.kt": "d506500e15fc65953349fd3151ef8982e5b2ba7b4e3db27199a0893fa9aac754",
+    "app/src/main/java/com/mousike/app/data/model/Models.kt": "745ba94c93c8eb991fec18ec5d51fdc077430ca6e9ebc7c9b8a62f96dbb4305e",
+    "app/src/main/java/com/mousike/app/data/repository/MusicRepository.kt": "3cb2a818a302f9c44fbf077feaa0da84191cb7ca554be2898fb46e4f1373788a",
+    "app/src/main/java/com/mousike/app/data/local/MousikeDatabase.kt": "912d6bdb7570984e7e06590e3f7136d35e5c5b77cce6bf9c71e7d47935123d27",
+    "app/src/main/java/com/mousike/app/data/local/Entities.kt": "73cd88daeb88abbb7dfd5c72e2afa043f84b533eaa4d6234d86544f6bd32dfa3",
+    "app/src/main/java/com/mousike/app/data/local/MousikeDao.kt": "0b6da814a7a18e389109ed157efa61bb9ed42310c5892e8854f32959b9f1a0de",
+    "app/src/main/java/com/mousike/app/download/DownloadStore.kt": "c68a13d98b430e3de623dc64137f18b39784c31e23d1935914993a0ded272ada",
+    "app/src/main/java/com/mousike/app/download/MusicDownloadWorker.kt": "5e1e3dcd23d573cd550e15e2f5d2f1d1049f354d38a08136a31ffed09fb848e2",
+    "app/src/main/java/com/mousike/app/settings/AppSettings.kt": "0765137337e1805fa8ee96405465a7285d31321e83cc41b444fd1490f33279b2",
+    "app/src/main/java/com/mousike/app/recommendation/TasteRanker.kt": "6db12a7b44721df0d554a9954853f2a11a10c9c3eff8253009946cebc5ba5448",
+    "app/src/main/java/com/mousike/app/recommendation/GeminiRecommender.kt": "353f75aa0d817138c0b15f70d64fb0bc540ea54535d06415cc1ce66d4d976e22",
+    "app/src/main/java/com/mousike/app/ui/viewmodel/MousikeViewModel.kt": "b7b84ee65603edef31bcbd7b0b9ad8733c07690e62dc27a99c8a9c70c9213c74"
+  },
+  "dependencies_unchanged": true
+}

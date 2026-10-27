@@ -1,0 +1,72 @@
+{
+  "name": "mousike-windows",
+  "productName": "Mousiké",
+  "version": "3.6.0",
+  "description": "Mousiké — Sound In motion. Windows desktop music player.",
+  "author": "Sujal Wagholikar",
+  "license": "GPL-3.0",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "bundle": "node tools/bundle.cjs",
+    "test": "node --test tests/*.test.cjs",
+    "dist:win": "node tools/package.cjs",
+    "pack:win": "node tools/package.cjs --portable-only",
+    "runtime": "node tools/download-runtime.cjs",
+    "test:desktop": "node tests/ui-smoke.cjs"
+  },
+  "dependencies": {
+    "hls.js": "1.7.3",
+    "lucide": "1.61.0"
+  },
+  "devDependencies": {
+    "electron": "45.0.0",
+    "electron-builder": "26.18.0",
+    "esbuild": "0.25.12",
+    "playwright": "1.62.1",
+    "resedit": "3.1.0"
+  },
+  "build": {
+    "appId": "com.mousike.windows",
+    "productName": "Mousike",
+    "artifactName": "Mousike-${version}-Windows-${arch}-Setup.${ext}",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "src/**/*",
+      "assets/**/*",
+      "package.json",
+      "LICENSE",
+      "THIRD_PARTY_NOTICES.md"
+    ],
+    "extraResources": [
+      {
+        "from": "runtime/win-x64",
+        "to": "runtime",
+        "filter": [
+          "**/*",
+          "!**/.*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        "dir"
+      ],
+      "icon": "assets/mousike.ico",
+      "signAndEditExecutable": false,
+      "executableName": "Mousike"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Mousiké",
+      "deleteAppDataOnUninstall": false
+    },
+    "npmRebuild": false
+  }
+}

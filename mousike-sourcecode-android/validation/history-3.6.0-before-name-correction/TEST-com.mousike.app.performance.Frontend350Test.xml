@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.mousike.app.performance.Frontend350Test" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-10-26T07:28:25.589Z" hostname="8dea5f7111fa" time="1.279">
+  <properties/>
+  <testcase name="mixPresentationLimitsArtistDominanceAndExcludesUnsplitLongVideos" classname="com.mousike.app.performance.Frontend350Test" time="1.156"/>
+  <testcase name="spotlightPersistsOneAutomaticImpressionPerCalendarDay" classname="com.mousike.app.performance.Frontend350Test" time="0.084"/>
+  <testcase name="themedMixesKeepRankedOrderAndDoNotSubstituteAnotherLanguage" classname="com.mousike.app.performance.Frontend350Test" time="0.039"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
